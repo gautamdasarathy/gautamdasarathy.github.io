@@ -1,0 +1,218 @@
+
+#bibbase_header a {
+    text-decoration: none;
+}
+
+#bibbase_header a[onclick="groupby('downloads')"] { display: none; }
+#bibbase_header a[onclick="groupby('keyword')"] { display: none; }
+#bibbase_header a[onclick="groupby('author_short')"] { display: none; }
+
+
+
+
+#bibbase_header i {
+    width: 16px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.groupby_dropdown{
+    display: none;
+}
+
+.bibbase_group {
+     background-color: #333;
+    /*background-color: #E0E0E0;*/
+    font-style: italic;
+    font-size: larger;
+    /*text-shadow: 0px 0px 3px #FFFFFF;*/
+
+    border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px;
+    padding: 5px 40px 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+a[href^="http://arxiv.org"] .bibbase_icon { display: none; }
+a[href^="http://arxiv.org"] .bibbase_icon_text { display: inline-block; color: ; }
+
+a[href^="https://arxiv.org"] .bibbase_icon { display: none; }
+a[href^="https://arxiv.org"] .bibbase_icon_text { display: inline-block; }
+
+a 
+
+.bibbase_group_body {
+    margin-left: 10px;
+}
+
+
+img.bibbase_icon {
+    width: 20px;
+    max-height: 16px;
+    vertical-align: text-top;
+    filter: url("data:image/svg+xml;utf8,<svg%20xmlns='http://www.w3.org/2000/svg'><filter%20id='grayscale'><feColorMatrix%20type='matrix'%20values='0.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200%200%200%201%200'/></filter></svg>#grayscale");
+    filter: grayscale(100%); /* Current draft standard */
+    -webkit-filter: grayscale(100%); /* New WebKit */
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%); 
+    -o-filter: grayscale(100%);
+    */filter: gray; /* IE6+ */
+}
+
+img.bibbase_icon:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
+
+.bibbase_group_count {
+    display: none;
+}
+
+/* span.bibbase_icon_text { */
+/*     display: none; */
+/* } */
+
+.bibbase_code {
+    width: 80%
+}
+
+.comment {
+    font-size: smaller;
+    font-style: italic;
+    color: gray;
+}
+
+.recommended {
+    color: green;
+}
+
+/* bootstrap */
+
+.bibbase_msg {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+#bibbase_embed_modal {
+    width: 70%;
+    left: 15%;
+    margin: 0;
+}
+
+.bibbase.well {
+    margin: 20px;
+    overflow-wrap: break-word;
+}
+
+.bibbase.link {
+    text-decoration: none;
+}
+
+/*Blocking and spacing*/
+#bibbase_body div[id^='group_'] div.bibbase_paper { 
+    display: block;  
+    padding: 5px;
+    border-width: 2px;
+    border-style: none;
+    font-size: 1.05em;
+    line-height: 1.1em;
+    margin-top: 5px;
+    margin-right: 1%;
+    margin-bottom: 8px;
+    vertical-align: middle;
+    font-family: "Play",sans-serif;
+}
+
+/*#group_article div.bibbase_paper { 
+    display: block;  
+    padding: 5px;
+    border-width: 2px;
+    border-style: none;
+    font-size: 1.05em;
+    line-height: 1.1em;
+    margin-top: 5px;
+    margin-right: 1%;
+    margin-bottom: 8px;
+    vertical-align: middle;
+    font-family: "Play",sans-serif;
+}
+#group_inproceedings div.bibbase_paper { 
+    display: block;  
+    padding: 5px;
+    border-width: 2px;
+    border-style: none;
+    font-size: 1.05em;
+    line-height: 1.1em;
+    margin-top: 5px;
+    margin-right: 1%;
+    margin-bottom: 8px; 
+    vertical-align: middle;
+    font-family: "Play",sans-serif;
+}
+#group_phdthesis div.bibbase_paper { 
+    display: block;  
+    padding: 5px;
+    border-width: 2px;
+    border-style: none;
+    font-size: 1.05em;
+    line-height: 1.1em;
+    margin-top: 5px;
+    margin-right: 1%;
+    margin-bottom: 8px;
+    vertical-align: middle;
+    font-family: "Play",sans-serif;
+}*/
+
+
+/*Remove paper title links*/
+/*#group_article div.bibbase_paper span.bibbase_note {font-weight: bold; font-style: italic;}
+#group_article div.bibbase_paper span.bibbase_paper_title {pointer-events: none; cursor: default;}
+#group_article div.bibbase_paper i {font-style: normal;}*/
+
+#bibbase_body div[id^='group_'] div.bibbase_paper span.bibbase_note {font-weight: bold; font-style: italic;}
+#bibbase_body div[id^='group_'] div.bibbase_paper span.bibbase_paper_title {pointer-events: none; cursor: default;}
+#bibbase_body div[id^='group_'] div.bibbase_paper i {font-style: normal;}
+
+/*Don't display (preprint) if already grouped as preprint*/
+#group_amisc div.bibbase_paper span.bibbase_note {display: none;}
+a.bibbase.bibtex.link {display: none;}
+
+
+/*Alternating colors*/
+/*#group_article div.bibbase_paper:nth-child(odd){ background-color: white; }
+#group_article div.bibbase_paper:nth-child(even){ background-color: #f5f5f5; }
+
+#group_inproceedings div.bibbase_paper:nth-child(odd){ background-color: white; }
+#group_inproceedings div.bibbase_paper:nth-child(even){ background-color: #f5f5f5; }
+
+#group_phdthesis div.bibbase_paper:nth-child(odd){ background-color: white; }
+#group_phdthesis div.bibbase_paper:nth-child(even){ background-color: #f5f5f5; }*/
+#bibbase_body div[id^='group_'] div.bibbase_paper:nth-child(odd){ background-color: white; }
+#bibbase_body div[id^='group_'] div.bibbase_paper:nth-child(even){ background-color: #f5f5f5; }
+
+/*White Titles for Group By Bars -- Type*/
+#group_article div.bibbase_group i+span { display: none; }
+#group_inproceedings div.bibbase_group i+span { display: none; }
+#group_phdthesis div.bibbase_group i+span { display: none; }
+#group_article div.bibbase_group i:before { text-shadow: none;}
+#group_article div.bibbase_group i:after { content: " Journal & Journal-Style CS Conference Papers"; color: white; font-family: "Play",sans-serif; text-shadow: none;}
+#group_inproceedings div.bibbase_group i:before { text-shadow: none;}
+#group_inproceedings div.bibbase_group i:after { content: " Conference Papers"; color: white; font-family: "Play",sans-serif;text-shadow: none;}
+#group_phdthesis div.bibbase_group i:before { text-shadow: none;}
+#group_phdthesis div.bibbase_group i:after { content: " Theses"; color: white; font-family: "Play",sans-serif; text-shadow: none; }
+#group_amisc div.bibbase_group i+span { display: none; }
+#group_amisc div.bibbase_group i:before { text-shadow: none;}
+#group_amisc div.bibbase_group i:after {content: " Preprints"; color: white; font-family: "Play",sans-serif; text-shadow: none;}
+
+
+
+
+/*White Titles for Group By Year*/
+/*#bibbase_body div[id^='group_2'] div.bibbase_group i+span { display: none; }*/
+#bibbase_body div[id^='group_2'] div.bibbase_group i:before { text-shadow: none;}
+#bibbase_body div[id^='group_2'] div.bibbase_group span {color: white; font-family: "Play",sans-serif; text-shadow: none;}
+

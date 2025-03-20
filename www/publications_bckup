@@ -1,0 +1,716 @@
+ <!DOCTYPE html>
+<!--
+                                   _       _   
+								  | |     | |    
+  Designed and Coded By           | | __ _| |__  
+ / _ \ \ /\ / /\ \ /\ / /\ \ /\ / / |/ _` | '_ \ 
+| (_) \ V  V /  \ V  V /  \ V  V /| | (_| | |_) |
+ \___/ \_/\_/    \_/\_/    \_/\_/ |_|\__,_|_.__/ 
+
+http://themeforest.net/user/owwwlab/
+                                          
+-->
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/WebPage">
+  <!-- #####Begin head-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- globalise scripting and styling content language-->
+    <meta name="Content-Type-Script" content="text/javascript">
+    <meta name="Content-Type-Style" content="text/css">
+    <!-- author of this doc-->
+    <meta name="author" content="owwwlab.com">
+    <!-- ################################-->
+    <!-- #### add SEO metadata here-->
+    <!-- ################################-->
+    <!-- #####Begin styles-->
+    <!-- stylesheets	-->
+    <link href="assets/css/vendors/vendors.css" rel="stylesheet" type="text/css">
+    <!-- Load extra page specific css-->
+    <!-- Overwrite vendors-->
+    <link href="assets/css/vendors/vendors-overwrites.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/demo3.css" rel="stylesheet" type="text/css">
+    <!-- #####End styles-->
+    <!-- #####Begin JS-->
+    <!-- add your scripts to the end of the page for sake of page load speed-->
+    <!-- scripts that need to be at head section-->
+    <script src="assets/js/vendors/jquery.min.js"></script>
+    <!-- #####End JS-->
+    <!-- #####Begin load google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Sintony:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:400,200,300,400italic,500,700,900&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+    <!-- #####End load google fonts-->
+    <title>GD | Publications</title>
+  </head>
+  <!-- #####End head-->
+  <body class="fullwidth side-header slim-container">
+    <div id="wrapper" class="regular-layout">
+      <header id="header" class=" dark">
+        <div class="head-main">
+          <div class="container">
+            <div class="logo-wrapper">
+              <div class="ol-user-profile"><a href="#" class="avatar"><img src="assets/img/avatar.jpg"></a>
+                <h1 class="title" style="width:180px;">Gautam Dasarathy</h1>
+                <h2 class="subtitle">Assistant Professor <br>ECEE<br> Arizona State University</h2>
+              </div>
+            </div>
+            <ul id="primary-menu">
+              <li class="current-menu-item"><a href="index.html" title="Home"><span>Home</span></a>
+              </li>
+              <li><a href="publications.html" title="Publications"><span>Research & Publications</span></a>
+              </li>
+              <li><a href="teaching.html" title="Teaching"><span>Teaching</span></a>
+              </li>
+              <!-- <li><a href="project-single.html" title="Project Single"><span>Project Single</span></a>
+              </li>
+              <li><a href="students.html" title="PHD Students"><span>PHD Students</span></a>
+              </li>
+              <li><a href="gallery.html" title="Gallery"><span>Gallery</span></a>
+              </li> -->
+              <!-- <li><a href="contact.html" title="Contact Me"><span>Contact Me</span></a>
+              </li> -->
+              <li><a href="files/gautamDasarathy_CV.pdf" title="Download CV"><span>Download CV</span></a>
+              </li>
+            </ul>
+            <div class="header-icons">
+              <!-- #####Begin mobile menu trigger-->
+              <div class="ol-mobile-trigger hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+              </div>
+              <!-- #####End mobile menu trigger-->
+            </div>
+          </div>
+        </div>
+        <!-- <div data-img-src="assets/img/bg/01.jpg" class="header-bg set-bg ov-dark-alpha-70"></div> -->
+      </header>
+      <!-- end #header-->
+      <section id="contents">
+        <!-- #####Begin page head-->
+        <div class="page-head lined bg-white shadow-line ol-particles h-150">
+          <div class="container">
+            <div class="tb-vcenter-wrapper">
+              <div class="title-wrapper vcenter">
+                <h1 class="title">Research & Publications</h1>
+              </div>
+              <div class="breadcrumb-wrapper vcenter">
+                <ul class="breadcrumb">
+                  <li><a href="index.html"><i class="oli oli-home"></i></a></li>
+                  <li><a href="#">Research & Publications</a></li>
+                  <!-- <li><a href="#">publication type</a></li>
+                  <li>learning environment</li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- #####End page head
+        -->
+        <div class="page-contents">
+          <!-- #####Begin main area-->
+          <section id="main-area">
+
+            <section class="section section-narrow">
+
+              <div class="container pull-up-40">
+              <p>My research interest lies at the intersection of machine learning, signal processing, statistics, and information theory and I work on data analysis problems that arise from diverse applications. In particular, my research vision is to develop a rich suite of techniques that take a holistic approach to the integrated design of learning algorithms and data acquisition systems. I have been designing the next generation of machine learning algorithms that leverage latent structures like graphs, subspaces, manifolds, and clusters to use data effectively while taking into account the constraints imposed by the data acquisition process. This often involves the design of pooling strategies for experiments, compressed data acquisition and transmission strategies, and strategies for interactivity of the learning algorithm with both its environment and with human experts.</p>
+                <!-- <div class="search-box inline-filters">
+                  <div class="row form-inline">
+                    <div class="col-sm-10 col-xs-6 form-group with-filter">
+                      <input type="text" placeholder="Search" class="form-control"><a href="#" data-toggle="tooltip" data-placement="top" title="Filter" class="toggle-filter"></a>
+                    </div>
+                    <div class="col-sm-2 col-xs-6 form-group">
+                      <input type="submit" value="Submit" class="btn btn-small btn-skin-red btn-block">
+                    </div>
+                  </div>
+                  <div class="row filters"><a href="#" class="clear-selectize">Clear Filters</a>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Publication Type:</label>
+                        <select data-placeholder="Select Types..." multiple="multiple" class="selectize">
+                          <option value=""></option>
+                          <option value="Journal Article">Journal Article</option>
+                          <option value="Conference Paper">Conference Paper</option>
+                          <option value="Report">Report</option>
+                          <option value="Book">Book</option>
+                          <option value="Book Chapter">Book Chapter</option>
+                          <option value="Proceeding">Proceeding</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label>Year:</label>
+                        <select data-placeholder="Select Year" multiple="multiple" class="selectize">
+                          <option value=""> </option>
+                          <option value="2000">2000</option>
+                          <option value="2001">2001</option>
+                          <option value="2004">2004</option>
+                          <option value="2005">2005</option>
+                          <option value="2006">2006</option>
+                          <option value="2010">2010</option>
+                          <option value="2011">2011</option>
+                          <option value="2012">2012</option>
+                          <option value="2013">2013</option>
+                          <option value="2014">2014</option>
+                          <option value="2015">2015</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Category:</label>
+                        <select data-placeholder="Select Types..." multiple="multiple" class="selectize">
+                          <option value=""></option>
+                          <option value="Physics">Physics</option>
+                          <option value="Algebra">Algebra</option>
+                          <option value="Jafarology">Jafarology</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+<div class="sp-blank-50"></div>
+                <h2>Preprints</h2>
+                <div class="sp-blank-10"></div>
+                <div class="pubs-wrapper">
+
+
+                 <div class="pub-item with-icon">
+                    <div class="elem-wrapper"><i class="oli oli-bookmark"></i></div>
+                    <div class="content-wrapper">
+                      <h2 class="title">A Tunable Loss Function for Classification</h2>
+                      <div class="description">
+                        <div class="citation">T. Sypherd, M. Diaz, H. Laddha, L. Sankar, P. Kairouz, and <u>G. Dasarathy</u> 
+                          </div>
+                          <a href="https://arxiv.org/abs/1906.02314" class="link-with-icon"><i class="fa fa-link"></i>arXiv</a>
+                      </div>
+                    </div>
+                  </div>
+
+                 <div class="pub-item with-icon">
+                    <div class="elem-wrapper"><i class="oli oli-bookmark"></i></div>
+                    <div class="content-wrapper">
+                      <h2 class="title">Thresholding Graph Bandits with GrAPL</h2>
+                      <div class="description">
+                        <div class="citation">D. LeJeune, <u>G. Dasarathy</u>, and R. Baraniuk
+                          </div>
+                          <a href="https://arxiv.org/abs/1905.09190" class="link-with-icon"><i class="fa fa-link"></i>arXiv</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="pub-item with-icon">
+                    <div class="elem-wrapper"><i class="oli oli-bookmark"></i></div>
+                    <div class="content-wrapper">
+                      <h2 class="title">Coalescent-Based Species Tree Estimation: A Stochastic Farris Transform</h2>
+                      <div class="description">
+                        <div class="citation"><u>G. Dasarathy</u>, E. Mossel, R. Nowak, and S. Roch
+                            <br>Submitted
+                          </div>
+                          <a href="https://arxiv.org/abs/1707.04300" class="link-with-icon"><i class="fa fa-link"></i>arXiv</a>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  
+
+                <div class="sp-blank-50"></div>
+
+                <h2>Journal Papers & Journal-Style CS Conference Papers</h2>
+                <div class="sp-blank-10"></div>
+                <div class="pubs-wrapper">
+
+                  <div class="pub-item with-icon">
+                    <div class="elem-wrapper"><i class="oli oli-bookmark"></i></div>
+                    <div class="content-wrapper">
+                      <h2 class="title">Multi-fidelity Gaussian Process Bandit Optimisation</h2>
+                      <div class="description">
+                        <div class="citation">K. Kandasamy, <u>G. Dasarathy</u>, J. Oliva, B. Poczos, and J. Schneider
+                            <br><b>(JAIR)</b> Journal of Artificial Intelligence Research (to appear)
+                          </div>
+                          <a href="files/j3Lai.pdf" class="link-with-icon"><i class="fa fa-link"></i>pdf</a>&nbsp;&nbsp;&nbsp;
+                          <a href="http://arxiv.org/abs/1603.06288" class="link-with-icon"><i class="fa fa-link"></i>arXiv</a>
+                      </div>
+                    </div>
+                  </div>
+
+                
+
+                	<div class="pub-item with-icon">
+                    <div class="elem-wrapper"><i class="oli oli-bookmark"></i></div>
+                    <div class="content-wrapper">
+                      <h2 class="title">A Data-Driven and Distributed Approach to Sparse Signal Representation and Recovery</h2>
+                      <div class="description">
+                        <div class="citation">A. Mousavi, <u>G. Dasarathy</u>, and R. Baraniuk
+                            <br><b>(ICLR 19)</b> International Conference on Learning Representations, May 2019
+                          </div>
+                          <a href="https://openreview.net/forum?id=B1xVTjCqKQ&noteId=BJlTjLcglV" class="link-with-icon"><i class="fa fa-link"></i>publisher's website</a>
+                      </div>
+                    </div>
+                  </div>
+
+                	<div class="pub-item with-icon">
+                    <div class="elem-wrapper"><i class="oli oli-bookmark"></i></div>
+                    <div class="content-wrapper">
+                      <h2 class="title">Ultra Large-Scale Feature Selection using Count-SketchesMulti-fidelity Bayesian Optimisation with Continuous Approximations</h2>
+                      <div class="description">
+                        <div class="citation">A. Aghazadeh, R. Spring, D. LeJeune, <u>G. Dasarathy</u>, A. Shrivastava, and R. Baraniuk
+                            <br><b>(ICML 18)</b> International Conference on Machine Learning, July 2018
+                          </div>
+                          <a href="http://proceedings.mlr.press/v80/aghazadeh18a.html" class="link-with-icon"><i class="fa fa-link"></i>publisher's website</a>
+                      </div>
+                    </div>
+                  </div>
+
+                
+
+                  <div class="pub-item with-icon">
+                    <div class="elem-wrapper"><i class="oli oli-bookmark"></i></div>
+                    <div class="content-wrapper">
+                      <h2 class="title">Multi-fidelity Bayesian Optimisation with Continuous Approximations</h2>
+                      <div class="description">
+                        <div class="citation">K. Kandasamy, <u>G. Dasarathy</u>, B. Poczos, and J. Schneider
+                            <br><b>(ICML 17)</b> International Conference on Machine Learning, Aug. 2017
+                          </div>
+                          <a href="https://arxiv.org/abs/1703.06240" class="link-with-icon"><i class="fa fa-link"></i>arXiv</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="pub-item with-icon">
+                    <div class="elem-wrapper"><i class="oli oli-bookmark"></i></div>
+                    <div class="content-wrapper">
+                      <h2 class="title">The Multi-fidelity Multi-armed Bandit</h2>
+                      <div class="description">
+                        <div class="citation">K. Kandasamy, <u>G. Dasarathy</u>, B. Poczos, and J. Schneider
+                            <br><b>(NIPS 16)</b> Advances in Neural Information Processing Systems, Barcelona, Spain, December 2016
+                          </div>
+                          <!-- <a href="files/j3Lai.pdf" class="link-with-icon"><i class="fa fa-link"></i>pdf</a>&nbsp;&nbsp;&nbsp;
+                          <a href="http://arxiv.org/abs/1603.06288" class="link-with-icon"><i class="fa fa-link"></i>arXiv</a> -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pub-item with-icon">
+                    <div class="elem-wrapper"><i class="oli oli-bookmark"></i></div>
+                    <div class="content-wrapper">
+                      <h2 class="title">Gaussian Process Bandit Optimization with Multi-fidelity Evaluations</h2>
+                      <div class="description">
+                        <div class="citation">K. Kandasamy, <u>G. Dasarathy</u>, J. Oliva, B. Poczos, and J. Schneider
+                            <br><b>(NIPS 16)</b> Advances in Neural Information Processing Systems, Barcelona, Spain, December 2016
+                          </div>
+                          
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pub-item with-icon">
+                    <div class="elem-wrapper"><i class="oli oli-bookmark"></i></div>
+                    <div class="content-wrapper">
+                      <h2 class="title">Active Learning Algorithms for Graphical Model Selection </h2>
+                      <div class="description">
+                        <div class="citation"><u>G. Dasarathy</u>, A. Singh, M. F. Balcan, and J. H. Park
+                            <br><b>(AISTATS 16)</b> International Conference on Artificial Intelligence and Statistics (AISTATS) 2016, Cadiz, Spain, May 2016 <span style="color: #FF3366;">[Full Oral Presentation]</span>
+                          </div>
+                          <a href="files/dsbp15.pdf" class="link-with-icon"><i class="fa fa-link"></i>pdf</a>&nbsp;&nbsp;&nbsp;
+                          <a href="files/dsbp15_supplementary.pdf" class="link-with-icon"><i class="fa fa-link"></i>supplementary</a>&nbsp;&nbsp;&nbsp;<a href="http://proceedings.mlr.press/v51/dasarathy16.html" class="link-with-icon"><i class="fa fa-link"></i>publisher's website</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="pub-item with-icon">
+                    <div class="elem-wrapper"><i class="oli oli-bookmark"></i></div>
+                    <div class="content-wrapper">
+                      <h2 class="title">S<sup>2</sup>: An Efficient Graph Based Active Learning Algorithm with Application to Nonparametric Classification</h2>
+                      <div class="description">
+                        <div class="citation"><u>G. Dasarathy</u>, R. Nowak, and X. Zhu
+                            <br><b>(COLT 15)</b> Conference on Learning Theory, Paris, France, July 2015
+                          </div>
+                          <a href="files/dasarathy15.pdf" class="link-with-icon"><i class="fa fa-link"></i>pdf</a>&nbsp;&nbsp;&nbsp;
+                          <a href="http://arxiv.org/abs/1506.08760" class="link-with-icon"><i class="fa fa-link"></i>arXiv</a>&nbsp;&nbsp;&nbsp;<a href="http://proceedings.mlr.press/v40/Dasarathy15.html" class="link-with-icon"><i class="fa fa-link"></i>publisher's website</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="pub-item with-icon">
+                    <div class="elem-wrapper"><i class="oli oli-bookmark"></i></div>
+                    <div class="content-wrapper">
+                      <h2 class="title">Data Requirement for Phylogenetic Inference from Multiple Loci: A New Distance Method</h2>
+                      <div class="description">
+                        <div class="citation"><u>G. Dasarathy</u>, R. Nowak, and S. Roch
+                            <br><b>(TCBB)</b> IEEE Transacations on Computational Biology and Bioinformatics, Vol 12, Issue 2, April 2015 
+                          </div>
+                          <a href="files/main_dnr.pdf" class="link-with-icon"><i class="fa fa-link"></i>pdf</a>&nbsp;&nbsp;&nbsp;
+                          <a href="http://arxiv.org/abs/1404.7055" class="link-with-icon"><i class="fa fa-link"></i>arXiv</a>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1109/TCBB.2014.2361685" class="link-with-icon"><i class="fa fa-link"></i>publisher's website</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pub-item with-icon">
+                    <div class="elem-wrapper"><i class="oli oli-bookmark"></i></div>
+                    <div class="content-wrapper">
+                      <h2 class="title">Sketching Sparse Matrices, Covariances, and Graphs via Tensor Products</h2>
+                      <div class="description">
+                        <div class="citation"><u>G. Dasarathy</u>, P. Shah, B. N. Bhaskar, and R. Nowak
+                            <br><b>(IT)</b> IEEE Transactions on Information Theory, Vol 61, Issue 3, March 2015
+                          </div>
+                          <a href="files/dasarathyCovSketchPreprint.pdf" class="link-with-icon"><i class="fa fa-link"></i>pdf</a>&nbsp;&nbsp;&nbsp;
+                          <a href="http://arxiv.org/abs/1303.6544" class="link-with-icon"><i class="fa fa-link"></i>arXiv</a>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1109/TIT.2015.2391251" class="link-with-icon"><i class="fa fa-link"></i>publisher's website</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pub-item with-icon">
+                    <div class="elem-wrapper"><i class="oli oli-bookmark"></i></div>
+                    <div class="content-wrapper">
+                      <h2 class="title">Efficient Network Tomography for Internet Topology Discovery</h2>
+                      <div class="description">
+                        <div class="citation">B. Eriksson, <u>G. Dasarathy</u>, P. Barford, and R. Nowak
+                            <br><b>(ToN)</b> IEEE/ACM Transactions on Networking, Vol 20, Issue 3, June 2012
+                          </div>
+                          <a href="files/RadarToN.pdf" class="link-with-icon"><i class="fa fa-link"></i>pdf</a>&nbsp;&nbsp;&nbsp;<a href="http://dx.doi.org/10.1109/TNET.2011.21757472391251" class="link-with-icon"><i class="fa fa-link"></i>publisher's website</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="pub-item with-icon">
+                    <div class="elem-wrapper"><i class="oli oli-bookmark"></i></div>
+                    <div class="content-wrapper">
+                      <h2 class="title">Active Clustering: Robust and Efficient Hierarchical Clustering using Adaptively Selected Similarities</h2>
+                      <div class="description">
+                        <div class="citation">B.Eriksson, <u>G. Dasarathy</u>, A. Singh, and R. Nowak
+                            <br><b>(AISTATS 11)</b> International Conference on Artificial Intelligence and Statistics, Ft. Lauderdale, Florida, 2011
+                          </div>
+                          <a href="files/erikssonAIStats11.pdf" class="link-with-icon"><i class="fa fa-link"></i>pdf</a>&nbsp;&nbsp;&nbsp;
+                          <a href="http://arxiv.org/abs/1102.3887" class="link-with-icon"><i class="fa fa-link"></i>arXiv</a>&nbsp;&nbsp;&nbsp;
+                          <a href="Active_Clustering/" class="link-with-icon"><i class="fa fa-link"></i>project webpage</a>&nbsp;&nbsp;&nbsp;
+                          <a href="Active_Clustering/Code.html" class="link-with-icon"><i class="fa fa-link"></i>code</a>
+                          </div>
+                    </div>
+                  </div>
+
+                  <div class="pub-item with-icon">
+                    <div class="elem-wrapper"><i class="oli oli-bookmark"></i></div>
+                    <div class="content-wrapper">
+                      <h2 class="title">Toward the Practical Use of Network Tomography for Internet Topology Discovery</h2>
+                      <div class="description">
+                        <div class="citation">B.Eriksson, <u>G. Dasarathy</u>, P. Barford, and R. Nowak
+                            <br><b>(INFOCOM 10)</b> IEEE International Conference on Computer Communications, San Diego, California, March 2010
+                          </div>
+                          <a href="files/infocomRadarFinal.pdf" class="link-with-icon"><i class="fa fa-link"></i>pdf</a>&nbsp;&nbsp;&nbsp;
+                          <a href="https://doi.org/10.1109/INFCOM.2010.5461970" class="link-with-icon"><i class="fa fa-link"></i>publisher's website</a>
+                          </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="sp-blank-50"></div>
+                <!-- **********************************************
+                *************************************************** -->
+                <h2>Conference & Workshop Papers</h2>
+                <div class="sp-blank-10"></div>
+                <div class="pubs-wrapper">
+
+
+                  <div class="pub-item with-icon">
+                    <div class="elem-wrapper"><i class="oli oli-bookmark"></i></div>
+                    <div class="content-wrapper">
+                      <h2 class="title">IdeoTrace: A Framework for Ideology Tracing with a Case Study on the 2016 U.S. Presidential Election</h2>
+                      <div class="description">
+                        <div class="citation">I. Manickam, A. Lan, <u>G. Dasarathy</u>, and R. Baraniuk
+                            <br><b>(ASONAM 19)</b>  IEEE/ACM International Conference on Social Networks Analysis and Mining, Vancouver, CA, August 2019.
+                          </div>
+                          <a href="https://arxiv.org/abs/1905.08831" class="link-with-icon"><i class="fa fa-link"></i>arxiv</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="pub-item with-icon">
+                    <div class="elem-wrapper"><i class="oli oli-bookmark"></i></div>
+                    <div class="content-wrapper">
+                      <h2 class="title">Gaussian Graphical Model Selection from Size Constrained Measurements</h2>
+                      <div class="description">
+                        <div class="citation"><u>G. Dasarathy</u>
+                            <br><b>(ISIT 19)</b>  IEEE International Symposium on Information Theory, Paris, July 2019.
+                          </div>
+                          <a href="files/dasarathy-gmss.pdf" class="link-with-icon"><i class="fa fa-link"></i>pdf</a>
+                          <!-- <a href="https://arxiv.org/abs/1905.08831" class="link-with-icon"><i class="fa fa-link"></i>arxiv</a> -->
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="pub-item with-icon">
+                    <div class="elem-wrapper"><i class="oli oli-bookmark"></i></div>
+                    <div class="content-wrapper">
+                      <h2 class="title">Distance Penalized Active Learning via Markov Decision Processes</h2>
+                      <div class="description">
+                        <div class="citation">D. Wang, J. Lipor, and <u>G. Dasarathy</u>
+                            <br><b>(DSW 19)</b>  IEEE Data Science Workshop, Minneapolis, June 2019.
+                          </div>
+                          <!-- <a href="https://arxiv.org/abs/1905.08831" class="link-with-icon"><i class="fa fa-link"></i>arxiv</a> -->
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                <div class="pub-item with-icon">
+                    <div class="elem-wrapper"><i class="oli oli-bookmark"></i></div>
+                    <div class="content-wrapper">
+                      <h2 class="title">Conveying Language Through Haptics: A Multi-sensory Approach</h2>
+                      <div class="description">
+                        <div class="citation">Dunkelberger, N., Sullivan, J., Bradley, J., Walling, N. P., Manickam, I., <u>Dasarathy, G.</u>, Israr, A., Lau, F. W. Y., Klumb, K., Knott, B., Abnousi, F., Baraniuk, R., and O'Malley, M. K.
+                            <br><b>(ISWC 18)</b>  2018 ACM International Symposium on Wearable Computers, Singapore, 2018.
+                          </div>
+                          <a href="files/iswc18.pdf" class="link-with-icon"><i class="fa fa-link"></i>pdf</a>&nbsp;&nbsp;&nbsp; <a href="http://dx.doi.org/10.1145/3267242.3267244" class="link-with-icon"><i class="fa fa-link"></i>doi</a>&nbsp;&nbsp;&nbsp; <a href="https://www.ecnmag.com/news/2018/10/can-you-feel-what-im-saying" class="link-with-icon"><i class="fa fa-link"></i>press</a>
+                      </div>
+                    </div>
+                  </div>
+
+
+            	  <div class="pub-item with-icon">
+                    <div class="elem-wrapper"><i class="oli oli-bookmark"></i></div>
+                    <div class="content-wrapper">
+                      <h2 class="title">Quantile Search with Time-Varying Search Parameter</h2>
+                      <div class="description">
+                        <div class="citation">J. Lipor, and <u>G. Dasarathy</u>
+                            <br><b>(ASILOMAR 18)</b>  Asilomar Conference on Signals, Systems, and Computers, October 2018
+                          </div>
+                          <!-- <a href="https://arxiv.org/abs/1707.03386" class="link-with-icon"><i class="fa fa-link"></i>arXiv</a> -->
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="pub-item with-icon">
+                    <div class="elem-wrapper"><i class="oli oli-bookmark"></i></div>
+                    <div class="content-wrapper">
+                      <h2 class="title">DeepCodec: Adaptive Sensing and Recovery via Deep Convolutional Neural Networks</h2>
+                      <div class="description">
+                        <div class="citation">A. Mousavi, <u>G. Dasarathy</u>, and R. Baraniuk
+                            <br><b>(Allerton 17)</b>  55th Annual Allerton Conference on Communication, Control, and Computing, October 2017
+                          </div>
+                          <a href="https://arxiv.org/abs/1707.03386" class="link-with-icon"><i class="fa fa-link"></i>arXiv</a>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  
+
+
+                  <div class="pub-item with-icon">
+                    <div class="elem-wrapper"><i class="oli oli-bookmark"></i></div>
+                    <div class="content-wrapper">
+                      <h2 class="title">Sketched Covariance Testing: A Compression-Statistics Tradeoff</h2>
+                      <div class="description">
+                        <div class="citation"><u>G. Dasarathy</u>, P. Shah, and R. Baraniuk
+                            <br><b>(ISIT 17)</b> IEEE International Symposium of Information Theory, Aachen, Germany, June 2017
+                          </div>
+                          <!-- <a href="files/j3Lai.pdf" class="link-with-icon"><i class="fa fa-link"></i>pdf</a>&nbsp;&nbsp;&nbsp;
+                          <a href="http://arxiv.org/abs/1603.06288" class="link-with-icon"><i class="fa fa-link"></i>arXiv</a> -->
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="pub-item with-icon">
+                    <div class="elem-wrapper"><i class="oli oli-bookmark"></i></div>
+                    <div class="content-wrapper">
+                      <h2 class="title">On Computational and Statistical Tradeoffs in Matrix Completion with Graph Information</h2>
+                      <div class="description">
+                        <div class="citation"><u>G. Dasarathy</u><sup>*</sup>, N. Rao<sup>*</sup>, and R. Baraniuk
+                            <br><b>(SPARS 17)</b> Signal Processing with Adaptive Sparse Structured Representations Workshop, Lisbon, Portugal, June 2017 <span style="color: #FF3366;">[Full Oral Presentation]</span>
+                            <br><sup>*</sup>authors contributed equally 
+                          </div>
+                          <!-- <a href="files/j3Lai.pdf" class="link-with-icon"><i class="fa fa-link"></i>pdf</a>&nbsp;&nbsp;&nbsp;
+                          <a href="http://arxiv.org/abs/1603.06288" class="link-with-icon"><i class="fa fa-link"></i>arXiv</a> -->
+                      </div>
+                    </div>
+                  </div>
+
+                  
+                  
+                  <div class="pub-item with-icon">
+                    <div class="elem-wrapper"><i class="oli oli-bookmark"></i></div>
+                    <div class="content-wrapper">
+                      <h2 class="title">New Sample Complexity Bounds for Phylogenetic Inference from Multiple Loci</h2>
+                      <div class="description">
+                        <div class="citation"><u>G. Dasarathy</u>, R. Nowak, and S. Roch
+                            <br><b>(ISIT 14)</b> IEEE International Symposium on Information Theory, Honolulu, Hawaii, July 2014
+                          </div>
+                          <a href="files/isit14_dnr.pdf" class="link-with-icon"><i class="fa fa-link"></i>pdf</a>&nbsp;&nbsp;&nbsp;
+                          <a href="http://dx.doi.org/10.1109/ISIT.2014.6875191" class="link-with-icon"><i class="fa fa-link"></i>publisher's website</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="pub-item with-icon">
+                    <div class="elem-wrapper"><i class="oli oli-bookmark"></i></div>
+                    <div class="content-wrapper">
+                      <h2 class="title">Upper and Lower Bounds on the Reliability of Content Identification </h2>
+                      <div class="description">
+                        <div class="citation"><u>G. Dasarathy</u>, and S. Draper
+                            <br><b>(IZS 14)</b> International Zürich Seminar on Communications, Zürich, Switzerland, February 2014 <br><i>S. D. invited</i>
+
+                          </div>
+                          
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="pub-item with-icon">
+                    <div class="elem-wrapper"><i class="oli oli-bookmark"></i></div>
+                    <div class="content-wrapper">
+                      <h2 class="title">Sketching Sparse Covariance Matrices and Graphs</h2>
+                      <div class="description">
+                        <div class="citation"><u>G. Dasarathy</u>,  P. Shah, B. Bhaskar, and R. Nowak
+                            <br><b>(NIPS 13 Workshop)</b> NIPS workshop on Randomized Methods in Machine Learning, December 2013
+                          </div>
+                          <a href="files/dasarathy_randomizedMethods.pdf" class="link-with-icon"><i class="fa fa-link"></i>pdf</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="pub-item with-icon">
+                    <div class="elem-wrapper"><i class="oli oli-bookmark"></i></div>
+                    <div class="content-wrapper">
+                      <h2 class="title">Covariance Sketching</h2>
+                      <div class="description">
+                        <div class="citation"><u>G. Dasarathy</u>,  P. Shah, B. Bhaskar, and R. Nowak
+                            <br><b>(Allerton 12)</b> Allerton Conference on Communication and Control, UIUC. October 2012 <br><i>R. N. invited</i>
+                          </div>
+                          <a href="files/dasarathyCovSketchAllerton12.pdf" class="link-with-icon"><i class="fa fa-link"></i>pdf</a>&nbsp;&nbsp;&nbsp;
+                          <a href="https://doi.org/10.1109/Allerton.2012.6483331" class="link-with-icon"><i class="fa fa-link"></i>publisher's website</a>                      
+                          </div>
+                    </div>
+                  </div>
+
+                  <div class="pub-item with-icon">
+                    <div class="elem-wrapper"><i class="oli oli-bookmark"></i></div>
+                    <div class="content-wrapper">
+                      <h2 class="title">On Reliability of Content Identification from Databases based on Noisy Queries </h2>
+                      <div class="description">
+                        <div class="citation"><u>G. Dasarathy</u>,  and S. Draper
+                            <br><b>(ISIT 11)</b> IEEE International Symposium on Information Theory, St. Petersburg, Russia, July 2011
+                          </div>
+                          <a href="files/dasarathyContentIdISIT11" class="link-with-icon"><i class="fa fa-link"></i>pdf</a>&nbsp;&nbsp;&nbsp;
+                          <a href="http://dx.doi.org/10.1109/ISIT.2011.6033694" class="link-with-icon"><i class="fa fa-link"></i>publisher's website</a>                      
+                          </div>
+                    </div>
+                  </div>
+
+                  <div class="pub-item with-icon">
+                    <div class="elem-wrapper"><i class="oli oli-bookmark"></i></div>
+                    <div class="content-wrapper">
+                      <h2 class="title">Reliability in Noisy Search</h2>
+                      <div class="description">
+                        <div class="citation"><u>G. Dasarathy</u>,  and S. Draper
+                            <br><b>(ITA 11)</b> UCSD Workshop on Information Theory and Applications, San Diego, California, February 2011 <br><i>S. D. invited</i>
+                          </div>
+                          <!-- <a href="files/dasarathyContentIdISIT11" class="link-with-icon"><i class="fa fa-link"></i>pdf</a>&nbsp;&nbsp;&nbsp;
+                          <a href="http://dx.doi.org/10.1109/ISIT.2011.6033694" class="link-with-icon"><i class="fa fa-link"></i>publisher's website</a>                       -->
+                          </div>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="sp-blank-50"></div>
+
+                <h2>Thesis</h2>
+                <div class="sp-blank-10"></div>
+                <div class="pubs-wrapper">
+
+                <div class="pub-item with-icon">
+                    <div class="elem-wrapper"><i class="oli oli-bookmark"></i></div>
+                    <div class="content-wrapper">
+                      <h2 class="title">Data Efficient and Robust Algorithms for Reconstructing Large Graphs</h2>
+                      <div class="description">
+                        <div class="citation">Advisors: Robert Nowak and Stark Draper
+                            <br>Department of Electrical and Computer Engineering, University of Wisconsin - Madison, August 2014
+                          </div>
+                          <a href="files/gautamDasarathy_Dissertation.pdf" class="link-with-icon"><i class="fa fa-link"></i>pdf</a>
+                          </div>
+                    </div>
+                  </div>
+                  <div class="sp-blank-40"></div>
+
+                <h2>Miscellaneous Notes</h2>
+                <div class="sp-blank-10"></div>
+                <div class="pubs-wrapper">
+
+                <div class="pub-item with-icon">
+                    <div class="elem-wrapper"><i class="oli oli-bookmark"></i></div>
+                    <div class="content-wrapper">
+                      <h2 class="title">A Simple Probability Trick for finding The Expected Maximum of n Random Variables.</h2>
+                      <div class="description">
+                        <div class="citation">This document outlines a simple method for finding the expected value of the maximum of n random variables.
+                          </div>
+                          <a href="files/maxGaussians.pdf" class="link-with-icon"><i class="fa fa-link"></i>pdf</a>
+                          </div>
+                    </div>
+                  </div>
+
+                  <div class="pub-item with-icon">
+                    <div class="elem-wrapper"><i class="oli oli-bookmark"></i></div>
+                    <div class="content-wrapper">
+                      <h2 class="title">"Non-Typewise" Method for Sharper Upper Bounds</h2>
+                      <div class="description">
+                        <div class="citation">A method (initially due to Massey) to sharpen upper bounds obtained using the method of types.
+                          </div>
+                          <a href="files/nonTypewiseUpperBounds" class="link-with-icon"><i class="fa fa-link"></i>pdf</a>
+                          </div>
+                    </div>
+                  </div>
+
+
+                <div class="sp-blank-50"></div>
+                <!-- #####Begin pagination links-->
+                <!-- <nav class="ol-pagination lined-links">
+                  <ul class="pagination">
+                    <li><a href="#">&laquo;</a></li>
+                    <li><a href="#">1</a></li>
+                    <li class="active"><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                  </ul>
+                </nav> -->
+                <!-- #####End pagination links-->
+                <div class="sp-blank-50"></div>
+              </div>
+            </section>
+          </section>
+          <!-- #####End main area
+          -->
+          <div class="clearfix"></div>
+        </div>
+      </section>
+      <!-- end #contents-->
+      <footer id="footer" class="dark-wrapper">
+        <div id="footer-bar" class="text-center">
+        Last updated: October 2018 | &copy Gautam Dasarathy 2018
+        </div>
+
+      </footer>
+      <!-- end #footer-->
+    </div>
+    <!-- #####Begin scripts-->
+    <script src="assets/js/vendors/vendors.js"></script>
+    <!-- Local Revolution tools-->
+    <!-- Only for local and can be removed on server-->
+    <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="http://localhost:35729/livereload.js"></script>
+    <!-- #####End scripts-->
+  </body>
+</html>
