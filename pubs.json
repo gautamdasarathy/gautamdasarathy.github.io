@@ -413,7 +413,7 @@
         "number": "1",
         "volume": "14",
         "journal": "IEEE Transactions on Haptics (IEEE ToH)",
-        "author": "Dunkelberger, Nathan and Sullivan, Jennifer L and Bradley, Joshua and Manickam, Indu and Dasarathy, Gautam and Baraniuk, Richard and O’Malley, Marcia K",
+        "author": "Dunkelberger, Nathan and Sullivan, Jennifer L and Bradley, Joshua and Manickam, Indu and Dasarathy, Gautam and Baraniuk, Richard and O'Malley, Marcia K",
         "title": "A multisensory approach to present phonemes as language through a wearable haptic device",
         "ENTRYTYPE": "article",
         "ID": "dunkelberger2020multisensory"
@@ -602,5 +602,47 @@
         "title": "Finding the Homology of Decision Boundaries with Active Learning",
         "ENTRYTYPE": "inproceedings",
         "ID": "li2020finding"
+    },
+    {
+        "title": "Communication-Efficient Federated Learning over Wireless Channels via Gradient Sketching",
+        "author": "Gattani, Vineet Sunil and Zhang, Junshan and Dasarathy, Gautam",
+        "journal": "arXiv preprint arXiv:2410.23424",
+        "year": "2024",
+        "ENTRYTYPE": "preprint",
+        "url_arxiv": "https://arxiv.org/abs/2410.23424"
+    },
+    {
+        "title": "Learning Networks from Wide-Sense Stationary Stochastic Processes",
+        "author": "Rayas, Anirudh and Cheng, Jiajun and Anguluri, Rajasekhar and Deka, Deepjyoti and Dasarathy, Gautam",
+        "journal": "arXiv preprint arXiv:2412.03768",
+        "year": "2024",
+        "ENTRYTYPE": "preprint",
+        "url_arxiv": "https://arxiv.org/abs/2412.03768"
+    },
+    {
+        "title": "Structure Learning in Gaussian Graphical Models from Glauber Dynamics",
+        "author": "Tirukkonda, Vignesh and Rayas, Anirudh and Dasarathy, Gautam",
+        "journal": "arXiv preprint arXiv:2412.18594",
+        "year": "2024",
+        "ENTRYTYPE": "preprint",
+        "url_arxiv": "https://arxiv.org/abs/2412.18594"
+    },
+    {
+        "title": "ClassBO: Bayesian Optimization for Heterogeneous Functions",
+        "author": "Malu, Mohit and Pedrielli, Giulia and Dasarathy, Gautam and Spanias, Andreas",
+        "booktitle": "International Conference on Learning and Intelligent Optimization",
+        "pages": "249--253",
+        "year": "2024",
+        "ENTRYTYPE": "inproceedings",
+        "organization": "Springer Nature Switzerland Cham"
+    },
+    {
+        "title": "Advanced Tutorial: Label-Efficient Two-Sample Tests",
+        "author": "Li, Weizhi and Berisha, Visar and Dasarathy, Gautam",
+        "booktitle": "2024 Winter Simulation Conference (WSC)",
+        "pages": "131--145",
+        "year": "2024",
+        "ENTRYTYPE": "inproceedings",
+        "organization": "IEEE"
     }
 ]
