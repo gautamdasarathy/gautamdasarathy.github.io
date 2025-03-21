@@ -388,9 +388,10 @@ function renderPublications(publications, groupKey) {
     'journal_csconf': 'Journal and Journal-length CS Conference Papers',
     'amisc': 'Miscellaneous',
     'preprint': 'Preprints',
+    'incollection': 'Book Chapters'
   };
 
-  const customOrder = ['preprint', 'journal_csconf', 'inproceedings', 'amisc'];
+  const customOrder = ['preprint', 'journal_csconf', 'inproceedings', 'incollection', 'amisc'];
 
   const sortedGroupKeys = groupKey === 'ENTRYTYPE'
     ? customOrder.filter(key => groupedPublications.hasOwnProperty(key))
