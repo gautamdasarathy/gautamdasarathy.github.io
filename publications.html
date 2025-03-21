@@ -62,7 +62,9 @@ http://themeforest.net/user/owwwlab/
             <div class="logo-wrapper">
               <div class="ol-user-profile"><a href="#" class="avatar"><img src="assets/img/avatar.jpg"></a>
                 <h1 class="title" style="width:180px;">Gautam Dasarathy</h1>
-                <h2 class="subtitle">Assistant Professor <br>ECEE<br> Arizona State University</h2>
+                <h2 class="subtitle">Associate Professor <br> ECEE<br> SCAI (Grad Faculty) <br> Arizona State University <br><br> 
+                  <div class="circle-icon skin-red size-xs hidden-sm hidden-xs"><a href="https://scholar.google.com/citations?user=iSL1cKsAAAAJ&hl=en"><i class="oli oli-GoogleScholar"></i></a></div>&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/gautamdasarathy"><div class="circle-icon skin-red size-xs hidden-sm hidden-xs"><i class="oli oli-twitter"></i></div></a>&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/gautamdasarathy/"><div class="circle-icon skin-red size-xs hidden-sm hidden-xs"><i class="oli oli-linkedin"></i></div></a>
+                  </h2>
               </div>
             </div>
             <ul id="primary-menu">
@@ -84,7 +86,7 @@ http://themeforest.net/user/owwwlab/
               </li>
               <div class="sp-blank-40"></div>
               <li></li>
-              <li><a href="#" title="Open Positions"><span">Open Positions</span></a>
+              <li><a href="#" data-toggle="modal" data-target="#myModal" data-backdrop="false">Open Positions </a>
               </li>
             </ul>
             <div class="header-icons">
@@ -130,10 +132,37 @@ http://themeforest.net/user/owwwlab/
 
               <div class="container pull-up-40">
               <p>My research interest lies at the intersection of machine learning, signal processing, statistics, and information theory and I work on data analysis problems that arise from diverse applications. In particular, my research vision is to develop a rich suite of techniques that take a holistic approach to the integrated design of learning algorithms and data acquisition systems. I have been designing the next generation of machine learning algorithms that leverage latent structures like graphs, subspaces, manifolds, and clusters to use data effectively while taking into account the constraints imposed by the data acquisition process. This often involves the design of pooling strategies for experiments, compressed data acquisition and transmission strategies, and strategies for interactivity of the learning algorithm with both its environment and with human experts.</p>
+
+              <!-- <p><a href="https://scholar.google.com/citations?user=iSL1cKsAAAAJ&hl=en">[Google Scholar]</a></p> -->
+              <a href="https://scholar.google.com/citations?user=iSL1cKsAAAAJ&hl=en" class="btn btn-small btn-thick-border btn-round"> <i class="oli oli-GoogleScholar"></i><span>Google Scholar</span></a>
+              
                 
 <div class="sp-blank-50"></div>
+
                 
-<script src="https://bibbase.org/show?bib=http%3A%2F%2Fgautamdasarathy.com%2Ffiles%2Fpubs.bib&jsonp=1&group0=type&sort=-year&authorFirst=1&token=6dcaa6d47bbd3e223f6e8be18437a60c"></script>
+<!-- <script src="https://bibbase.org/show?bib=http%3A%2F%2Fgautamdasarathy.com%2Ffiles%2Fpubs.bib&jsonp=1&group0=type&sort=-year&commas=1&token=6dcaa6d47bbd3e223f6e8be18437a60c"></script> -->
+
+
+<div class="container" style="padding-left: 0px !important;">
+                <div class="search-box inline-filters" style="padding-left: 30px !important; padding-right: 40px !important;">
+                  <div class="row form-inline">
+                    <div class="col-lg-12 offset-lg-10 col-sm-12 offset-sm-10 col-xs-6 form-group with-filter">
+                      <input type="text" placeholder="Search" class="form-control" id="searchInput">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sp-blank-10"></div>
+                <div class="sort-buttons">
+    <button id="sortByYear" class="btn btn-small btn-thick-border btn-circle btn-anim-drawer">Sort by Year</button>
+    <button id="sortByType" class="btn btn-small btn-thick-border btn-circle btn-anim-drawer">Sort by Type</button>
+    <!-- <button id="sortByTopic" class="btn btn-small btn-thick-border btn-circle btn-anim-drawer">Sort by Topic</button> -->
+</div>
+
+<div class="sp-blank-50"></div>
+                <div class="pubs-wrapper" id="pubsWrapper">
+                  
+                 </div>
 
                 <div class="sp-blank-50"></div>
                 
@@ -146,10 +175,31 @@ http://themeforest.net/user/owwwlab/
           <div class="clearfix"></div>
         </div>
       </section>
+
+      <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+        <div role="document" class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"><i class="oli oli-delete_sign"></i></span></button>
+              <h4 id="myModalLabel" class="modal-title">Open Positions</h4>
+              <div class="modal-body">
+                <p>I am always on the lookout for excellent Ph.D. students and postdocs who are interested in theoretical research in the areas of machine learning, high-dimensional statistics, information processing, and networks. Applications that have recently motivated my work include neuroscience, power system monitoring, sequential decision making, and pandemic prediction and prevention. If you think there is a match between our interests, please send me an email. 
+                </p>
+
+                  <p> I would be particularly thrilled to receive applications from people in underrepresented groups in machine learning, such as women and BIPOC candidates.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" data-dismiss="modal" class="btn btn-small btn-round btn-skin-red">Close</button>
+                <!-- <button type="button" class="btn btn-small btn-round btn-skin-red">Save changes</button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- end #contents-->
       <footer id="footer" class="dark-wrapper">
         <div id="footer-bar" class="text-center">
-        Last updated: May 2020 | &copy Gautam Dasarathy 2020
+        Last updated: March 2023 | &copy Gautam Dasarathy 2023
         </div>
 
       </footer>
@@ -169,6 +219,264 @@ http://themeforest.net/user/owwwlab/
     <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="http://localhost:35729/livereload.js"></script>
+
+<textarea id="bibtex_input" style="display:none;"></textarea>
+    <textarea id="bibtex_output" style="display:none;"></textarea>
+    <script>
+    let publications = [];
+
+    async function fetchPublications() {
+        try {
+            const response = await fetch('pubs.json');
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            const data = await response.json();
+            publications = data;
+            publications.sort(sortByYear); // Sort by year by default
+            const publicationsByYear = publications.reduce((groups, publication) => {
+  if (!groups[publication.year]) {
+    groups[publication.year] = [];
+  }
+  groups[publication.year].push(publication);
+  return groups;
+}, {});
+
+// renderPublications(publicationsByYear);
+            renderPublications(publications, 'year');
+
+
+        } catch (error) {
+            console.error('Error fetching JSON data:', error);
+        }
+    }
+
+  function toCamelCase(str) {
+  return str.replace(/\w\S*/g, (txt) => {
+    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+  });
+}
+
+
+function renderPublication(publication, lastItem = false) {
+    const authors = publication.author.split(' and ');
+    const formattedAuthors = authors.map((name, index) => {
+        const [lastName, firstName] = name.trim().split(', ');
+        const initials = firstName.split(' ').map(char => `${char[0]}.`).join(' ');
+        const formattedName = `${initials} ${lastName}`;
+
+        if (index === authors.length - 1 && authors.length > 1) {
+            return `and ${formattedName}`;
+        }
+        return formattedName;
+    }).join(', ');
+
+    const rawSource = publication.journal || publication.booktitle || '';
+
+    // Function to render buttons based on the desired order
+    function renderButtons() {
+        const buttonOrder = ['link', 'paper', 'arxiv', 'code'];
+        const buttons = [];
+
+        buttonOrder.forEach(item => {
+            const urlKey = Object.keys(publication).find(key => key.toLowerCase() === `url_${item}`);
+            if (urlKey) {
+                buttons.push(`<a href="${publication[urlKey]}" class="btn btn-extra-small btn-circle btn-skin-red btn-trans">${item[0].toUpperCase() + item.slice(1)}</a>`);
+            }
+        });
+
+        return buttons.join(' ');
+    }
+
+
+    const camelCaseTitle = toCamelCase(publication.title);
+    const note = publication.note ? `<span class="theme-color" style="font-style: italic;">${publication.note}</span><br>` : '';
+
+    const source = rawSource.replace(/\(([^)]+)\)/g, '(<span style="color:#FF3366"><strong>$1</strong></span>)');
+    const orderedButtons = renderButtons();
+
+    return `
+    <div class="pub-item${lastItem ? ' last-item' : ''}">
+        <div class="content-wrapper">
+            <h3 class="title">${camelCaseTitle}</h3>
+            <div class="description">
+                <div class="citation">${formattedAuthors}<br>${source}, ${publication.year} <br>${note}</div>
+                ${orderedButtons}
+            </div>
+        </div>
+    </div>`;
+}
+
+
+
+
+// function groupPublications(publications, groupKey) {
+//   return publications.reduce((groups, publication) => {
+//     let groupValue = publication[groupKey];
+    
+//     if (groupKey === 'year' && parseInt(groupValue) <= 2014) {
+//       groupValue = '2014 and earlier';
+//     }
+
+//     if (!groups[groupValue]) {
+//       groups[groupValue] = [];
+//     }
+//     groups[groupValue].push(publication);
+//     return groups;
+//   }, {});
+// }
+
+function groupPublications(publications, groupKey) {
+  return publications.reduce((groups, publication) => {
+    let groupValue = publication[groupKey];
+
+    if (groupKey === 'year' && parseInt(groupValue) <= 2014) {
+      groupValue = '2014 and earlier';
+    }
+
+    if (groupKey === 'ENTRYTYPE' && (groupValue === 'article' || groupValue === 'csconf')) {
+      groupValue = 'journal_csconf';
+    }
+
+    if (!groups[groupValue]) {
+      groups[groupValue] = [];
+    }
+    groups[groupValue].push(publication);
+    return groups;
+  }, {});
+}
+
+
+
+
+
+
+// function renderPublications(publications, groupKey) {
+//   const groupedPublications = groupKey ? groupPublications(publications, groupKey) : { '': publications };
+//   const pubsWrapper = document.getElementById('pubsWrapper');
+//   pubsWrapper.innerHTML = '';
+
+//   // Sort the groups in descending order
+//   const sortedGroupKeys = Object.keys(groupedPublications).sort((a, b) => parseInt(b) - parseInt(a));
+
+//   for (const group of sortedGroupKeys) {
+//     if (group !== '') {
+//       const sectionHeader = document.createElement('h2');
+//       // sectionHeader.classList.add('with-sideline');
+//       sectionHeader.textContent = group;
+//       pubsWrapper.appendChild(sectionHeader);
+//     }
+
+//     const sectionPublications = groupedPublications[group];
+//     sectionPublications.sort(sortByYear); // This will sort in descending order
+
+//     sectionPublications.forEach((publication, index) => {
+//         const pubElement = document.createElement('div');
+//         pubElement.innerHTML = renderPublication(publication, index === sectionPublications.length - 1);
+//         pubsWrapper.appendChild(pubElement);
+//     });
+//   }
+// }
+
+function renderPublications(publications, groupKey) {
+  const groupedPublications = groupKey ? groupPublications(publications, groupKey) : { '': publications };
+  const pubsWrapper = document.getElementById('pubsWrapper');
+  pubsWrapper.innerHTML = '';
+
+  const sectionTitles = {
+    'inproceedings': 'Conference and Workshop Papers',
+    'journal_csconf': 'Journal and Journal-length CS Conference Papers',
+    'amisc': 'Miscellaneous',
+    'preprint': 'Preprints',
+  };
+
+  const customOrder = ['preprint', 'journal_csconf', 'inproceedings', 'amisc'];
+
+  const sortedGroupKeys = groupKey === 'ENTRYTYPE'
+    ? customOrder.filter(key => groupedPublications.hasOwnProperty(key))
+    : Object.keys(groupedPublications).sort((a, b) => parseInt(b) - parseInt(a));
+
+  for (const group of sortedGroupKeys) {
+    if (group !== '') {
+      const sectionHeader = document.createElement('h2');
+      sectionHeader.classList.add('with-sideline')
+      sectionHeader.textContent = groupKey === 'ENTRYTYPE' ? sectionTitles[group] : group;
+      pubsWrapper.appendChild(sectionHeader);
+    }
+
+    const sectionPublications = groupedPublications[group];
+    sectionPublications.sort(sortByYear); // This will sort in descending order
+
+    sectionPublications.forEach((publication, index) => {
+      const pubElement = document.createElement('div');
+      pubElement.innerHTML = renderPublication(publication, index === sectionPublications.length - 1);
+      pubsWrapper.appendChild(pubElement);
+    });
+  }
+}
+
+
+
+
+
+    function sortByYear(a, b) {
+  return parseInt(b.year) - parseInt(a.year);
+}
+
+
+    function sortByType(a, b) {
+        if (a.ENTRYTYPE < b.ENTRYTYPE) {
+            return -1;
+        }
+        if (a.ENTRYTYPE > b.ENTRYTYPE) {
+            return 1;
+        }
+        return 0;
+    }
+
+    function sortByTopic(a, b) {
+        if (a.topic < b.topic) {
+            return -1;
+        }
+        if (a.topic > b.topic) {
+            return 1;
+        }
+        return 0;
+    }
+
+    fetchPublications();
+
+    // Event listeners for search input and sorting buttons
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('input', (event) => {
+    const searchTerm = event.target.value.toLowerCase();
+    const filteredPublications = publications.filter(publication => {
+        return Object.values(publication).some(value => {
+            if (typeof value === 'string') {
+                return value.toLowerCase().includes(searchTerm);
+            }
+            return false;
+        });
+    });
+    renderPublications(filteredPublications);
+});
+
+
+
+    document.getElementById('sortByYear').addEventListener('click', () => {
+  renderPublications(publications, 'year');
+});
+
+document.getElementById('sortByType').addEventListener('click', () => {
+  renderPublications(publications, 'ENTRYTYPE');
+});
+
+document.getElementById('sortByTopic').addEventListener('click', () => {
+  renderPublications(publications, 'topic');
+});
+
+</script>
+
     <!-- #####End scripts-->
   </body>
 </html>

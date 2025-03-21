@@ -70,7 +70,7 @@
  *  - Header variations
  */
 .page-contents *:last-child, #footer *:last-child {
-    margin-bottom: 0 !important;
+/*    margin-bottom: 0 !important;*/
 }
 /*
 .page-contents *:first-child:not([class*='pull-up-']){
@@ -10437,8 +10437,8 @@ a.nav-box:hover .widget-heading.right .sub-title, .nav-box a .widget-heading.rig
 .pub-item {
     position: relative;
     border-bottom: 1px solid #dedede;
-    padding-bottom: 30px;
-    margin-bottom: 30px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
 }
 .pub-item .elem-wrapper {
     float: left;
@@ -10459,7 +10459,8 @@ a.nav-box:hover .widget-heading.right .sub-title, .nav-box a .widget-heading.rig
 .pub-item .title {
     font-size: 16px;
     color: #636363;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
+    margin-top: 8px;
     font-weight: bold;
     font-weight: 700;
 }
@@ -10488,12 +10489,12 @@ a.nav-box:hover .widget-heading.right .sub-title, .nav-box a .widget-heading.rig
     top: 1px;
 }
 .pub-item .description .citation, .pub-item .description .citation a {
-    font-style: italic;
+/*    font-style: italic;*/
     color: #9d9d9d;
     max-width: 80%;
 }
 .pub-item .description .citation {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 .pub-item .description .citation a {}
 .pub-item .description .citation a:hover, .pub-item .description .citation a:focus {
@@ -10572,6 +10573,10 @@ a.nav-box:hover .widget-heading.right .sub-title, .nav-box a .widget-heading.rig
 .pub-item.with-thumb.xlarge.right .content-wrapper {
     margin-left: 0px;
     margin-right: 145px;
+}
+.pub-item.last-item {
+    border-bottom: none;
+    margin-bottom: 30px;
 }
 dl.description-item {
     font-size: 12px;
