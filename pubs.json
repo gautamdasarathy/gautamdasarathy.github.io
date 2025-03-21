@@ -644,5 +644,35 @@
         "year": "2024",
         "ENTRYTYPE": "inproceedings",
         "organization": "IEEE"
+    },
+    {
+        "title": "Understanding the spatial patchwork of predictive modeling of first wave pandemic decisions by US governors",
+        "author": "Solís, Patricia and Dasarathy, Gautam and Turaga, Pavan and Drake, Alexandria and Vora, Kevin Jatin and Sajja, Akarshan and Raaman, Ankith and Praharaj, Sarbeswar and Lattus, Robert",
+        "booktitle": "Examining the COVID Crisis from a Geographical Perspective",
+        "pages": "100--123",
+        "year": "2023",
+        "publisher": "Routledge",
+        "ENTRYTYPE": "incollection",
+        "ID": "solis2023understanding"
+    },
+    {
+        "title": "Active Sequential Two-Sample Testing",
+        "author": "Li, Weizhi and Kadambi, Prad and Saidi, Pouria and Ramamurthy, Karthikeyan Natesan and Dasarathy, Gautam and Berisha, Visar",
+        "journal": "arXiv preprint arXiv:2301.12616",
+        "year": "2023",
+        "ENTRYTYPE": "preprint",
+        "url_arxiv": "https://arxiv.org/abs/2301.12616",
+        "ID": "li2023active"
+    },
+    {
+        "title": "Nonparanormal graph quilting with applications to calcium imaging",
+        "author": "Chang, Andersen and Zheng, Lili and Dasarathy, Gautam and Allen, Genevera I",
+        "journal": "Stat",
+        "volume": "12",
+        "number": "1",
+        "pages": "e623",
+        "year": "2023",
+        "ENTRYTYPE": "article",
+        "ID": "chang2023nonparanormal"
     }
 ]
