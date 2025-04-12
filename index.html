@@ -153,7 +153,7 @@ gautamd
               <!-- <div class="container pull-up-50"> -->
                 <h2>Recent News</h2>
                 <!-- #####Begin timeline-->
-                <div class="ol-timeline">
+                <div class="ol-timeline" id="newsContainer">
 
                   <!-- #####Begin timeline item-->
 <div class="tl-item pub-item with-icon"><span class="item-section">07.24</span>
@@ -835,6 +835,15 @@ gautamd
 
                 </div>
                 <!-- #####End timeline-->
+
+                <!-- Add Show More/Less button -->
+                <div class="text-center" style="margin-top: 30px;">
+                  <button id="toggleNewsBtn" class="btn btn-small btn-round btn-skin-red">
+                    Show More News
+                  </button>
+                </div>
+
+                <div class="sp-blank-100"></div>
               </div>
             </section>
             <section class="bg-gray">
@@ -899,5 +908,36 @@ gautamd
     <script src="assets/js/custom.js"></script>
     <script src="http://localhost:35729/livereload.js"></script>
     <!-- #####End scripts-->
+
+    <!-- Add this JavaScript before the closing body tag -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const newsItems = document.querySelectorAll('.tl-item');
+        const initialDisplay = 5; // Number of items to show initially
+        const toggleBtn = document.getElementById('toggleNewsBtn');
+        let isExpanded = false;
+
+        // Hide items beyond initial display
+        newsItems.forEach((item, index) => {
+            if (index >= initialDisplay) {
+                item.style.display = 'none';
+            }
+        });
+
+        // Toggle button click handler
+        toggleBtn.addEventListener('click', function() {
+            isExpanded = !isExpanded;
+            
+            newsItems.forEach((item, index) => {
+                if (index >= initialDisplay) {
+                    item.style.display = isExpanded ? 'block' : 'none';
+                }
+            });
+
+            // Update button text
+            toggleBtn.textContent = isExpanded ? 'Show Less News' : 'Show More News';
+        });
+    });
+    </script>
   </body>
 </html>
