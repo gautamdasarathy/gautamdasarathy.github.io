@@ -963,39 +963,24 @@ gautamd
         let recentCount = 0;
         let olderCount = 0;
 
-        // First pass to count items and set initial visibility
+        // First pass to count items
         newsItems.forEach((item) => {
             const dateSection = item.querySelector('.item-section');
             if (dateSection) {
                 const itemDate = parseDate(dateSection.textContent);
                 if (itemDate && itemDate >= fourMonthsAgo) {
                     recentCount++;
-                    item.classList.remove('hidden-item');
+                    item.style.display = 'block';
                 } else {
                     olderCount++;
-                    item.classList.add('hidden-item');
+                    // Hide only the content wrapper, not the entire item
+                    const contentWrapper = item.querySelector('.content-wrapper');
+                    if (contentWrapper) {
+                        contentWrapper.style.display = 'none';
+                    }
                 }
             }
         });
-
-        // Add CSS to handle visibility while preserving date display
-        const style = document.createElement('style');
-        style.textContent = `
-            .tl-item.hidden-item {
-                height: 0;
-                overflow: hidden;
-                margin: 0;
-                padding: 0;
-                opacity: 0;
-                transition: all 0.3s ease;
-            }
-            .tl-item {
-                height: auto;
-                opacity: 1;
-                transition: all 0.3s ease;
-            }
-        `;
-        document.head.appendChild(style);
 
         // Always show the toggle button, but update its text based on content
         toggleBtn.style.display = 'block';
@@ -1017,14 +1002,12 @@ gautamd
             
             newsItems.forEach((item) => {
                 const dateSection = item.querySelector('.item-section');
-                if (dateSection) {
+                const contentWrapper = item.querySelector('.content-wrapper');
+                if (dateSection && contentWrapper) {
                     const itemDate = parseDate(dateSection.textContent);
                     if (itemDate && itemDate < fourMonthsAgo) {
-                        if (isExpanded) {
-                            item.classList.remove('hidden-item');
-                        } else {
-                            item.classList.add('hidden-item');
-                        }
+                        // Toggle only the content wrapper visibility
+                        contentWrapper.style.display = isExpanded ? 'block' : 'none';
                     }
                 }
             });
