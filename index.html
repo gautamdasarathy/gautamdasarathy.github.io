@@ -942,26 +942,78 @@ gautamd
     <script>
     document.addEventListener('DOMContentLoaded', function() {
         const newsItems = document.querySelectorAll('.tl-item');
-        const initialDisplay = 5; // Number of items to show initially
         const toggleBtn = document.getElementById('toggleNewsBtn');
         let isExpanded = false;
 
-        // Hide items beyond initial display
-        newsItems.forEach((item, index) => {
-            if (index >= initialDisplay) {
-                item.style.display = 'none';
+        // Function to parse date from item-section
+        function parseDate(dateStr) {
+            const [month, year] = dateStr.split('.');
+            return new Date(2000 + parseInt(year), parseInt(month) - 1);
+        }
+
+        // Get current date and date 4 months ago
+        const currentDate = new Date();
+        const fourMonthsAgo = new Date();
+        fourMonthsAgo.setMonth(currentDate.getMonth() - 4);
+
+        // Add a separator div after recent news
+        let lastRecentItem = null;
+        let hasOlderItems = false;
+
+        // First pass to find the last recent item and check for older items
+        newsItems.forEach((item) => {
+            const dateSection = item.querySelector('.item-section');
+            if (dateSection) {
+                const itemDate = parseDate(dateSection.textContent);
+                if (itemDate >= fourMonthsAgo) {
+                    lastRecentItem = item;
+                } else {
+                    hasOlderItems = true;
+                    item.style.display = 'none'; // Initially hide older items
+                }
             }
         });
+
+        // Add separator if we have both recent and older items
+        if (lastRecentItem && hasOlderItems) {
+            const separator = document.createElement('div');
+            separator.className = 'news-separator';
+            separator.innerHTML = `
+                <div style="text-align: center; margin: 30px 0;">
+                    <hr style="border-top: 1px solid rgba(255,255,255,0.1); margin: 10px 0;">
+                    <span style="color: #666; font-style: italic;">Older News</span>
+                    <hr style="border-top: 1px solid rgba(255,255,255,0.1); margin: 10px 0;">
+                </div>
+            `;
+            separator.style.display = 'none'; // Initially hide the separator
+            lastRecentItem.insertAdjacentElement('afterend', separator);
+
+            // Show/hide toggle button only if we have older items
+            toggleBtn.style.display = 'block';
+        } else {
+            toggleBtn.style.display = 'none';
+        }
 
         // Toggle button click handler
         toggleBtn.addEventListener('click', function() {
             isExpanded = !isExpanded;
             
-            newsItems.forEach((item, index) => {
-                if (index >= initialDisplay) {
-                    item.style.display = isExpanded ? 'block' : 'none';
+            // Toggle older items and separator
+            newsItems.forEach((item) => {
+                const dateSection = item.querySelector('.item-section');
+                if (dateSection) {
+                    const itemDate = parseDate(dateSection.textContent);
+                    if (itemDate < fourMonthsAgo) {
+                        item.style.display = isExpanded ? 'block' : 'none';
+                    }
                 }
             });
+
+            // Toggle separator
+            const separator = document.querySelector('.news-separator');
+            if (separator) {
+                separator.style.display = isExpanded ? 'block' : 'none';
+            }
 
             // Update button text
             toggleBtn.textContent = isExpanded ? 'Show Less News' : 'Show More News';
