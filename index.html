@@ -947,8 +947,11 @@ gautamd
 
         // Function to parse date from item-section
         function parseDate(dateStr) {
+            if (!dateStr) return null;
             const [month, year] = dateStr.split('.');
-            return new Date(2000 + parseInt(year), parseInt(month) - 1);
+            // Handle 2024 dates as 2024, others as 20xx
+            const fullYear = parseInt(year) >= 24 ? 2000 + parseInt(year) : 2000 + parseInt(year);
+            return new Date(fullYear, parseInt(month) - 1);
         }
 
         // Get current date and date 4 months ago
@@ -956,64 +959,52 @@ gautamd
         const fourMonthsAgo = new Date();
         fourMonthsAgo.setMonth(currentDate.getMonth() - 4);
 
-        // Add a separator div after recent news
-        let lastRecentItem = null;
-        let hasOlderItems = false;
+        // Count recent and older items
+        let recentCount = 0;
+        let olderCount = 0;
 
-        // First pass to find the last recent item and check for older items
+        // First pass to count items
         newsItems.forEach((item) => {
             const dateSection = item.querySelector('.item-section');
             if (dateSection) {
                 const itemDate = parseDate(dateSection.textContent);
-                if (itemDate >= fourMonthsAgo) {
-                    lastRecentItem = item;
+                if (itemDate && itemDate >= fourMonthsAgo) {
+                    recentCount++;
+                    item.style.display = 'block';
                 } else {
-                    hasOlderItems = true;
-                    item.style.display = 'none'; // Initially hide older items
+                    olderCount++;
+                    item.style.display = 'none';
                 }
             }
         });
 
-        // Add separator if we have both recent and older items
-        if (lastRecentItem && hasOlderItems) {
-            const separator = document.createElement('div');
-            separator.className = 'news-separator';
-            separator.innerHTML = `
-                <div style="text-align: center; margin: 30px 0;">
-                    <hr style="border-top: 1px solid rgba(255,255,255,0.1); margin: 10px 0;">
-                    <span style="color: #666; font-style: italic;">Older News</span>
-                    <hr style="border-top: 1px solid rgba(255,255,255,0.1); margin: 10px 0;">
-                </div>
-            `;
-            separator.style.display = 'none'; // Initially hide the separator
-            lastRecentItem.insertAdjacentElement('afterend', separator);
-
-            // Show/hide toggle button only if we have older items
-            toggleBtn.style.display = 'block';
+        // Always show the toggle button, but update its text based on content
+        toggleBtn.style.display = 'block';
+        if (olderCount === 0) {
+            toggleBtn.textContent = 'Show Older News';
+            toggleBtn.disabled = true;
+            toggleBtn.style.opacity = '0.5';
         } else {
-            toggleBtn.style.display = 'none';
+            toggleBtn.textContent = 'Show More News';
+            toggleBtn.disabled = false;
+            toggleBtn.style.opacity = '1';
         }
 
         // Toggle button click handler
         toggleBtn.addEventListener('click', function() {
+            if (olderCount === 0) return; // Don't do anything if no older items
+
             isExpanded = !isExpanded;
             
-            // Toggle older items and separator
             newsItems.forEach((item) => {
                 const dateSection = item.querySelector('.item-section');
                 if (dateSection) {
                     const itemDate = parseDate(dateSection.textContent);
-                    if (itemDate < fourMonthsAgo) {
+                    if (itemDate && itemDate < fourMonthsAgo) {
                         item.style.display = isExpanded ? 'block' : 'none';
                     }
                 }
             });
-
-            // Toggle separator
-            const separator = document.querySelector('.news-separator');
-            if (separator) {
-                separator.style.display = isExpanded ? 'block' : 'none';
-            }
 
             // Update button text
             toggleBtn.textContent = isExpanded ? 'Show Less News' : 'Show More News';
