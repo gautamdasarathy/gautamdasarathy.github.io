@@ -58,7 +58,11 @@ gautamd
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://gautamdasarathy.com" />
 
-  <meta http-equiv="refresh" content="0; url=https://gautamdasarathy.com/" />
+  <script>
+    if (location.protocol === 'http:') {
+      location.href = location.href.replace('http:', 'https:');
+    }
+  </script>
   </head>
   <!-- #####End head-->
   <body class="fullwidth side-header slim-container">
