@@ -963,20 +963,39 @@ gautamd
         let recentCount = 0;
         let olderCount = 0;
 
-        // First pass to count items
+        // First pass to count items and set initial visibility
         newsItems.forEach((item) => {
             const dateSection = item.querySelector('.item-section');
             if (dateSection) {
                 const itemDate = parseDate(dateSection.textContent);
                 if (itemDate && itemDate >= fourMonthsAgo) {
                     recentCount++;
-                    item.style.display = 'block';
+                    item.classList.remove('hidden-item');
                 } else {
                     olderCount++;
-                    item.style.display = 'none';
+                    item.classList.add('hidden-item');
                 }
             }
         });
+
+        // Add CSS to handle visibility while preserving date display
+        const style = document.createElement('style');
+        style.textContent = `
+            .tl-item.hidden-item {
+                height: 0;
+                overflow: hidden;
+                margin: 0;
+                padding: 0;
+                opacity: 0;
+                transition: all 0.3s ease;
+            }
+            .tl-item {
+                height: auto;
+                opacity: 1;
+                transition: all 0.3s ease;
+            }
+        `;
+        document.head.appendChild(style);
 
         // Always show the toggle button, but update its text based on content
         toggleBtn.style.display = 'block';
@@ -1001,7 +1020,11 @@ gautamd
                 if (dateSection) {
                     const itemDate = parseDate(dateSection.textContent);
                     if (itemDate && itemDate < fourMonthsAgo) {
-                        item.style.display = isExpanded ? 'block' : 'none';
+                        if (isExpanded) {
+                            item.classList.remove('hidden-item');
+                        } else {
+                            item.classList.add('hidden-item');
+                        }
                     }
                 }
             });
