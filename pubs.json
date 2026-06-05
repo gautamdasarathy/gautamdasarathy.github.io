@@ -76,6 +76,7 @@
         "ID": "li2026matched"
     },
     {
+        "url_link": "https://papers.nips.cc/paper_files/paper/2025/hash/a540928a972fea5b501b64c51f7829ef-Abstract-Position_Paper_Track.html",
         "year": "2025",
         "journal": "Advances in Neural Information Processing Systems (NeurIPS)",
         "volume": "38",
@@ -85,6 +86,7 @@
         "ID": "dolin2025statistically"
     },
     {
+        "url_link": "https://openreview.net/forum?id=AIby9MQXbu",
         "year": "2025",
         "journal": "Transactions on Machine Learning Research (TMLR)",
         "number": "2835-8856",
@@ -94,6 +96,7 @@
         "ID": "zahin2025robust"
     },
     {
+        "url_link": "https://doi.org/10.1177/18724981251328140",
         "publisher": "SAGE Publications Sage UK: London, England",
         "year": "2025",
         "pages": "1271--1282",
@@ -676,6 +679,7 @@
         "journal": "IEEE Transactions on Signal and Information Processing over Networks",
         "year": "2025",
         "publisher": "IEEE",
+        "url_link": "https://doi.org/10.1109/TSIPN.2025.3583488",
         "ENTRYTYPE": "article",
         "url_arxiv": "https://arxiv.org/abs/2412.03768",
         "ID": "rayas2025learning"
@@ -688,6 +692,7 @@
         "year": "2025",
         "organization": "IEEE",
         "ENTRYTYPE": "inproceedings",
+        "url_link": "https://doi.org/10.1109/ISIT63088.2025.11195666",
         "url_arxiv": "https://arxiv.org/abs/2412.18594",
         "ID": "tirukkonda2025structure"
     },
