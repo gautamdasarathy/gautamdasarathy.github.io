@@ -69,8 +69,6 @@ http://themeforest.net/user/owwwlab/
                     Graduate Faculty, SCAI<br>  
                     <!-- <div style="height: 3px;"></div> -->
                     Arizona State University<br>
-                    <div style="height: 20px;"></div>
-                    Amazon Scholar<br>
                     <div style="height: 25px;"></div>
                     <div style="text-align: center;">
                       <div class="circle-icon skin-red size-xs hidden-sm hidden-xs" style="display: inline-block;">
@@ -215,7 +213,7 @@ http://themeforest.net/user/owwwlab/
       <!-- end #contents-->
       <footer id="footer" class="dark-wrapper">
         <div id="footer-bar" class="text-center">
-        Last updated: March 2023 | &copy Gautam Dasarathy 2023
+        Last updated: June 2026 | &copy Gautam Dasarathy 2026
         </div>
 
       </footer>
@@ -243,7 +241,7 @@ http://themeforest.net/user/owwwlab/
 
     async function fetchPublications() {
         try {
-            const response = await fetch('pubs.json');
+            const response = await fetch('pubs.json', { cache: 'no-cache' });
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
@@ -266,13 +264,6 @@ http://themeforest.net/user/owwwlab/
             console.error('Error fetching JSON data:', error);
         }
     }
-
-  function toCamelCase(str) {
-  return str.replace(/\w\S*/g, (txt) => {
-    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-  });
-}
-
 
 function renderPublication(publication, lastItem = false) {
     const authors = publication.author.split(' and ');
@@ -305,7 +296,7 @@ function renderPublication(publication, lastItem = false) {
     }
 
 
-    const camelCaseTitle = toCamelCase(publication.title);
+    const displayTitle = publication.title;
     const note = publication.note ? `<span class="theme-color" style="font-style: italic;">${publication.note}</span><br>` : '';
 
     const source = rawSource.replace(/\(([^)]+)\)/g, '(<span style="color:#FF3366"><strong>$1</strong></span>)');
@@ -314,7 +305,7 @@ function renderPublication(publication, lastItem = false) {
     return `
     <div class="pub-item${lastItem ? ' last-item' : ''}">
         <div class="content-wrapper">
-            <h3 class="title">${camelCaseTitle}</h3>
+            <h3 class="title">${displayTitle}</h3>
             <div class="description">
                 <div class="citation">${formattedAuthors}<br>${source}, ${publication.year} <br>${note}</div>
                 ${orderedButtons}
@@ -404,10 +395,11 @@ function renderPublications(publications, groupKey) {
     'journal_csconf': 'Journal and Journal-length CS Conference Papers',
     'amisc': 'Miscellaneous',
     'preprint': 'Preprints',
-    'incollection': 'Book Chapters'
+    'incollection': 'Book Chapters',
+    'phdthesis': 'Theses'
   };
 
-  const customOrder = ['preprint', 'journal_csconf', 'inproceedings', 'incollection', 'amisc'];
+  const customOrder = ['preprint', 'journal_csconf', 'inproceedings', 'incollection', 'phdthesis', 'amisc'];
 
   const sortedGroupKeys = groupKey === 'ENTRYTYPE'
     ? customOrder.filter(key => groupedPublications.hasOwnProperty(key))
@@ -488,9 +480,12 @@ document.getElementById('sortByType').addEventListener('click', () => {
   renderPublications(publications, 'ENTRYTYPE');
 });
 
-document.getElementById('sortByTopic').addEventListener('click', () => {
-  renderPublications(publications, 'topic');
-});
+const sortByTopicButton = document.getElementById('sortByTopic');
+if (sortByTopicButton) {
+  sortByTopicButton.addEventListener('click', () => {
+    renderPublications(publications, 'topic');
+  });
+}
 
 </script>
 

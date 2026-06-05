@@ -34,6 +34,65 @@ gautamd
     <link href="assets/css/vendors/vendors-overwrites.css" rel="stylesheet" type="text/css">
     <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
     <link href="assets/css/demo3.css" rel="stylesheet" type="text/css">
+    <style>
+      .news-logo-badge {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
+        height: 78px;
+        border: 1px solid #dedede;
+        border-radius: 4px;
+        background: #fff;
+        color: #555;
+        font-family: "Play", sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 1.1;
+      }
+
+      .news-logo-badge span {
+        margin-top: 4px;
+        color: #888;
+        font-size: 13px;
+        letter-spacing: 0;
+        text-transform: uppercase;
+      }
+
+      @media (max-width: 991px) {
+        #newsContainer .content-wrapper .col-md-2 img {
+          display: block;
+          width: auto !important;
+          max-width: 140px;
+          max-height: 90px;
+          height: auto;
+          margin: 12px auto 0;
+          object-fit: contain;
+        }
+      }
+
+      @media (max-width: 768px) {
+        #newsContainer .tl-item.pub-item.with-icon .elem-wrapper i {
+          width: 34px;
+          height: 34px;
+          font-size: 16px;
+          line-height: 34px;
+        }
+
+        #newsContainer .tl-item.pub-item.with-icon .content-wrapper {
+          margin-left: 50px;
+        }
+
+        #newsContainer .tl-item.pub-item.with-icon:before {
+          top: 17px;
+        }
+
+        #newsContainer .tl-item.pub-item.with-icon .item-section {
+          top: 9px;
+        }
+      }
+    </style>
     
     <!-- #####End styles-->
     <!-- #####Begin JS-->
@@ -49,17 +108,17 @@ gautamd
     <link href="assets/css/bibbase.css" rel="stylesheet" type="text/css">
     <!-- #####End load google fonts-->
     <title>Gautam Dasarathy | Arizona State University</title>
-    <meta name="description" content="Associate Professor at ASU and Amazon Scholar. I work on statistical machine learning, information processing, and graphs." />
+    <meta name="description" content="Associate Professor at ASU. I work on statistical machine learning, information processing, and graphs." />
   <meta name="author" content="Gautam Dasarathy" />
   <meta name="robots" content="index, follow" />
 
   <meta property="og:title" content="Gautam Dasarathy" />
-  <meta property="og:description" content="Machine Learning Researcher at ASU and Amazon Scholar" />
+  <meta property="og:description" content="Machine Learning Researcher at ASU" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://gautamdasarathy.com" />
 
   <script>
-    if (location.protocol === 'http:') {
+    if (location.protocol === 'http:' && !['localhost', '127.0.0.1', '::1'].includes(location.hostname)) {
       location.href = location.href.replace('http:', 'https:');
     }
   </script>
@@ -80,8 +139,6 @@ gautamd
                     Graduate Faculty, SCAI<br>
                     <!-- <div style="height: 5px;"></div> -->
                     Arizona State University<br>
-                    <div style="height: 20px;"></div>
-                    Amazon Scholar<br>
                     <div style="height: 25px;"></div>
                     <div style="text-align: center;">
                       <div class="circle-icon skin-red size-xs hidden-sm hidden-xs" style="display: inline-block;">
@@ -145,7 +202,7 @@ gautamd
                 <h2>About Me</h2>
                 <div class="row">
                   <div class="col-md-8" style="text-align: justify;">
-                    <p>I am an Associate Professor in the <a href="https://ecee.engineering.asu.edu">School of Electrical, Computer, and Energy Engineering</a> at <a href="https://www.asu.edu">Arizona State University</a>, where I also hold a courtesy appointment in the <a href="https://scai.engineering.asu.edu/">School of Computing and Augmented Intelligence</a>. I am also an Amazon Scholar, where I work on machine learning and optimization problems relevant to Amazon Last Mile.</p>
+                    <p>I am an Associate Professor in the <a href="https://ecee.engineering.asu.edu">School of Electrical, Computer, and Energy Engineering</a> at <a href="https://www.asu.edu">Arizona State University</a>, where I am also in the graduate faculty of the <a href="https://scai.engineering.asu.edu/">School of Computing and Augmented Intelligence</a>.</p>
                     
                     <p>My research lies at the intersection of machine learning, statistics, information processing, and networked systems. I am particularly interested in developing data- and compute-efficient learning algorithms that operate in resource-constrained environments. Much of my work focuses on interactive learning—algorithms that not only learn from data but also decide what data to collect next. A recurring theme is leveraging structure—graphs, manifolds, or physical laws—to inform both inference and acquisition. Recent applications I have worked on include power grid monitoring, neuroscience, meta-science, circuit design, and epidemiological forecasting.</p>
                     
@@ -190,6 +247,138 @@ gautamd
                 <h2>Recent News</h2>
                 <!-- #####Begin timeline-->
                 <div class="ol-timeline" id="newsContainer">
+
+                  <!-- #####Begin timeline item-->
+<div class="tl-item pub-item with-icon"><span class="item-section">06.26</span>
+  <div class="elem-wrapper"><i class="oli oli-literature"></i></div>
+  <div class="content-wrapper">
+    <div class="row align-items-center">
+      <div class="col-md-9">
+      <h2 class="title" style="font-size: 16px;">Paper Accepted to UAI 2026</h2>
+        <div class="description">
+          <p>Our paper, 'Matched-Pair Experimental Design with Active Learning', by Weizhi Li, Gautam Dasarathy, and Visar Berisha, was accepted to the Conference on Uncertainty in Artificial Intelligence (UAI 2026) in June 2026.<br><b><a href="https://arxiv.org/abs/2509.10742">[arXiv]</a></b></p>
+          <div class="sp-blank-10"></div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-2" style="text-align: center;">
+        <div class="news-logo-badge">UAI<span>2026</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- #####End timeline item-->
+
+                  <!-- #####Begin timeline item-->
+<div class="tl-item pub-item with-icon"><span class="item-section">12.25</span>
+  <div class="elem-wrapper"><i class="oli oli-literature"></i></div>
+  <div class="content-wrapper">
+    <div class="row align-items-center">
+      <div class="col-md-9">
+      <h2 class="title" style="font-size: 16px;">New Position Paper at NeurIPS 2025</h2>
+        <div class="description">
+          <p>Our position paper, 'Statistically Valid Post-Deployment Monitoring Should Be Standard for AI-Based Digital Health', by Pavel Dolin, Weizhi Li, Gautam Dasarathy, and Visar Berisha, appeared in NeurIPS 2025.<br><b><a href="https://papers.nips.cc/paper_files/paper/2025/hash/a540928a972fea5b501b64c51f7829ef-Abstract-Position_Paper_Track.html">[NeurIPS]</a></b> <b><a href="https://arxiv.org/abs/2506.05701">[arXiv]</a></b></p>
+          <div class="sp-blank-10"></div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-2" style="text-align: center;">
+        <img src="files/pics/neurips-logo.png" width="45%" alt="NeurIPS logo">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- #####End timeline item-->
+
+                  <!-- #####Begin timeline item-->
+<div class="tl-item pub-item with-icon"><span class="item-section">07.25</span>
+  <div class="elem-wrapper"><i class="oli oli-literature"></i></div>
+  <div class="content-wrapper">
+    <div class="row align-items-center">
+      <div class="col-md-9">
+      <h2 class="title" style="font-size: 16px;">New Paper in IEEE TSIPN</h2>
+        <div class="description">
+          <p>Our paper, 'Learning Networks From Wide-Sense Stationary Stochastic Processes', by Anirudh Rayas, Jiajun Cheng, Rajasekhar Anguluri, Deepjyoti Deka, and Gautam Dasarathy, appeared in IEEE Transactions on Signal and Information Processing over Networks.<br><b><a href="https://doi.org/10.1109/TSIPN.2025.3583488">[DOI]</a></b> <b><a href="https://arxiv.org/abs/2412.03768">[arXiv]</a></b></p>
+          <div class="sp-blank-10"></div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-2" style="text-align: center;">
+        <img src="files/pics/ieee.png" width="100%" alt="IEEE logo">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- #####End timeline item-->
+
+                  <!-- #####Begin timeline item-->
+<div class="tl-item pub-item with-icon"><span class="item-section">06.25</span>
+  <div class="elem-wrapper"><i class="oli oli-literature"></i></div>
+  <div class="content-wrapper">
+    <div class="row align-items-center">
+      <div class="col-md-9">
+      <h2 class="title" style="font-size: 16px;">New Paper at ISIT 2025</h2>
+        <div class="description">
+          <p>Our paper, 'Structure Learning in Gaussian Graphical Models from Glauber Dynamics', by Vignesh Tirukkonda, Anirudh Rayas, and Gautam Dasarathy, appeared at the 2025 IEEE International Symposium on Information Theory.<br><b><a href="https://doi.org/10.1109/ISIT63088.2025.11195666">[DOI]</a></b> <b><a href="https://arxiv.org/abs/2412.18594">[arXiv]</a></b></p>
+          <div class="sp-blank-10"></div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-2" style="text-align: center;">
+        <img src="files/pics/ieee.png" width="100%" alt="IEEE logo">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- #####End timeline item-->
+
+                  <!-- #####Begin timeline item-->
+<div class="tl-item pub-item with-icon"><span class="item-section">04.25</span>
+  <div class="elem-wrapper"><i class="oli oli-trophy"></i></div>
+  <div class="content-wrapper">
+    <div class="row align-items-center">
+      <div class="col-md-9">
+      <h2 class="title" style="font-size: 16px;">2025 Top 5% Teaching Award</h2>
+        <div class="description">
+          <p>Honored to receive the 2025 Top 5% Teaching Award from ASU's Fulton Schools of Engineering.</p>
+          <div class="sp-blank-10"></div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-2" style="text-align: center;">
+        <img src="files/pics/asu.png" width="100%" alt="ASU logo">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- #####End timeline item-->
+
+                  <!-- #####Begin timeline item-->
+<div class="tl-item pub-item with-icon"><span class="item-section">04.25</span>
+  <div class="elem-wrapper"><i class="oli oli-literature"></i></div>
+  <div class="content-wrapper">
+    <div class="row align-items-center">
+      <div class="col-md-9">
+      <h2 class="title" style="font-size: 16px;">Three Spring 2025 Journal Papers</h2>
+        <div class="description">
+          <p>Three journal papers from the group appeared in April 2025:
+            <ul>
+              <li>'Robust Model Selection of Gaussian Graphical Models' by Abrar Zahin, Rajasekhar Anguluri, Lalitha Sankar, Oliver Kosut, and Gautam Dasarathy. TMLR. <b><a href="https://openreview.net/forum?id=AIby9MQXbu">[OpenReview]</a></b></li>
+              <li>'Unraveling Overoptimism and Publication Bias in ML-Driven Science' by Pouria Saidi, Gautam Dasarathy, and Visar Berisha. Patterns. <b><a href="https://www.sciencedirect.com/science/article/pii/S2666389925000339">[ScienceDirect]</a></b></li>
+              <li>'High Dimensional Bayesian Optimization for Circuit Design' by Mohit Malu, Diann Dow, Prateek Sharma, Alexis Cottam, Mat Binggeli, Gautam Dasarathy, Giulia Pedrielli, and Andreas Spanias. Intelligent Decision Technologies. <b><a href="https://journals.sagepub.com/doi/10.1177/18724981251328140">[SAGE]</a></b></li>
+            </ul>
+          </p>
+          <div class="sp-blank-10"></div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-2" style="text-align: center;">
+        <div class="news-logo-badge">Journals<span>2025</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- #####End timeline item-->
 
                   <!-- #####Begin timeline item-->
 <div class="tl-item pub-item with-icon"><span class="item-section">07.24</span>
@@ -923,7 +1112,7 @@ gautamd
       <!-- end #contents-->
       <footer id="footer" class="dark-wrapper">
         <div id="footer-bar" class="text-center h-20">
-        Last updated: March 2023 | &copy Gautam Dasarathy 2023
+        Last updated: June 2026 | &copy Gautam Dasarathy 2026
         </div>
 
       </footer>
@@ -949,7 +1138,7 @@ gautamd
     <script>
     document.addEventListener('DOMContentLoaded', function() {
         const newsItems = document.querySelectorAll('.tl-item');
-        const initialDisplay = 5; // Number of items to show initially
+        const initialDisplay = 6; // Number of items to show initially
         const toggleBtn = document.getElementById('toggleNewsBtn');
         let isExpanded = false;
 

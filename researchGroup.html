@@ -1,15 +1,4 @@
 <!DOCTYPE html>
-<!--
-                                   _       _   
-								  | |     | |    
-  Designed and Coded By           | | __ _| |__  
- / _ \ \ /\ / /\ \ /\ / /\ \ /\ / / |/ _` | '_ \ 
-| (_) \ V  V /  \ V  V /  \ V  V /| | (_| | |_) |
- \___/ \_/\_/    \_/\_/    \_/\_/ |_|\__,_|_.__/ 
-
-http://themeforest.net/user/owwwlab/
-                                          
--->
 <html lang="en" dir="ltr" itemscope itemtype="http://schema.org/WebPage">
   <!-- #####Begin head-->
   <head>
@@ -20,7 +9,7 @@ http://themeforest.net/user/owwwlab/
     <meta name="Content-Type-Script" content="text/javascript">
     <meta name="Content-Type-Style" content="text/css">
     <!-- author of this doc-->
-    <meta name="author" content="owwwlab.com">
+    <meta name="author" content="Gautam Dasarathy adapted from an owwwlab.com template">
     <!-- ################################-->
     <!-- #### add SEO metadata here-->
     <!-- ################################-->
@@ -46,6 +35,154 @@ http://themeforest.net/user/owwwlab/
     <!-- #####End load google fonts-->
     <link rel="canonical" href="https://gautamdasarathy.com/researchGroup.html" />
     <title>GD | Group</title>
+    <style>
+      .alumni-table {
+        width: 100%;
+        margin-top: 18px;
+        border-collapse: collapse;
+        background: #fff;
+        font-size: 15px;
+        line-height: 1.5;
+      }
+
+      .alumni-controls {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 12px;
+        margin-top: 18px;
+      }
+
+      .alumni-filter {
+        display: inline-flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+
+      .alumni-filter button {
+        min-width: 46px;
+        padding: 6px 11px;
+        border: 1px solid #d8d8d8;
+        border-radius: 3px;
+        background: #fff;
+        color: #555;
+        font-family: "Play", sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 1.2;
+      }
+
+      .alumni-filter button[aria-pressed="true"] {
+        border-color: #ff3366;
+        background: #ff3366;
+        color: #fff;
+      }
+
+      .alumni-sort {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-left: auto;
+      }
+
+      .alumni-sort label,
+      .alumni-count {
+        color: #666;
+        font-family: "Play", sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      .alumni-sort select {
+        min-width: 142px;
+        height: 32px;
+        padding: 4px 9px;
+        border: 1px solid #d8d8d8;
+        border-radius: 3px;
+        background: #fff;
+        color: #555;
+      }
+
+      .alumni-table th,
+      .alumni-table td {
+        padding: 10px 12px;
+        border-bottom: 1px solid #e5e5e5;
+        vertical-align: top;
+      }
+
+      .alumni-table th {
+        color: #555;
+        font-family: "Play", sans-serif;
+        font-weight: 700;
+        text-align: left;
+        background: #f7f7f7;
+      }
+
+      .alumni-table a {
+        font-weight: 700;
+      }
+
+      .alumni-table .degree,
+      .alumni-table .year {
+        white-space: nowrap;
+      }
+
+      @media (max-width: 767px) {
+        .alumni-controls,
+        .alumni-filter,
+        .alumni-sort {
+          width: 100%;
+        }
+
+        .alumni-sort {
+          margin-left: 0;
+        }
+
+        .alumni-sort select {
+          flex: 1;
+        }
+
+        .alumni-table,
+        .alumni-table tbody,
+        .alumni-table tr {
+          display: block;
+          width: 100%;
+        }
+
+        .alumni-table thead {
+          display: none;
+        }
+
+        .alumni-table tr {
+          padding: 10px 0;
+          border-bottom: 1px solid #e5e5e5;
+        }
+
+        .alumni-table td {
+          display: grid;
+          grid-template-columns: 110px minmax(0, 1fr);
+          column-gap: 12px;
+          width: 100%;
+          padding: 3px 0;
+          border-bottom: 0;
+        }
+
+        .alumni-table td::before {
+          content: attr(data-label);
+          color: #666;
+          font-weight: 700;
+        }
+
+        .alumni-table td:first-child {
+          display: block;
+          padding-top: 0;
+        }
+
+        .alumni-table td:first-child::before {
+          content: "";
+        }
+      }
+    </style>
   </head>
   <!-- #####End head-->
   <body class="fullwidth side-header slim-container">
@@ -62,8 +199,6 @@ http://themeforest.net/user/owwwlab/
                     Graduate Faculty, SCAI<br>
                     <!-- <div style="height: 5px;"></div> -->
                     Arizona State University<br>
-                    <div style="height: 20px;"></div>
-                    Amazon Scholar<br>
                     <div style="height: 25px;"></div>
                     <div style="text-align: center;">
                       <div class="circle-icon skin-red size-xs hidden-sm hidden-xs" style="display: inline-block;">
@@ -126,7 +261,7 @@ http://themeforest.net/user/owwwlab/
               </div>
               <div class="breadcrumb-wrapper vcenter">
                 <ul class="breadcrumb">
-                  <li><a href="#"><i class="oli oli-home"></i></a></li>
+                  <li><a href="index.html"><i class="oli oli-home"></i></a></li>
                   <li><a href="researchGroup.html">Group</a></li>
                 </ul>
               </div>
@@ -177,62 +312,10 @@ http://themeforest.net/user/owwwlab/
       <div class="sp-blank-20"></div>
       <div class="featured-person">
         <a href="#">
-          <img src="files/pics/mmalu.jpg" class="img-fluid">
-        </a>
-        <a href="https://sensip.engineering.asu.edu/mohit-malu-phd/">
-          <h3>Mohit Malu</h3>
-        </a>
-        <p>co-advised with Andreas Spanias</p>
-      </div>
-      <div class="sp-blank-60"></div>
-    </div>
-    <div class="col-md-4 col-sm-6">
-      <div class="sp-blank-20"></div>
-      <div class="featured-person">
-        <a href="https://anirudhrayas.github.io">
-          <img src="files/pics/arayas.jpg" class="img-fluid">
-        </a>
-        <a href="#">
-          <h3>Anirudh Rayas</h3>
-        </a>
-        <p></p>
-      </div>
-      <div class="sp-blank-60"></div>
-    </div>
-    <div class="col-md-4 col-sm-6">
-      <div class="sp-blank-20"></div>
-      <div class="featured-person">
-        <a href="#">
           <img src="files/pics/vtirukkonda.jpg" class="img-fluid">
         </a>
         <a href="#">
           <h3>Vignesh Tirukkonda</h3>
-        </a>
-        <p></p>
-      </div>
-      <div class="sp-blank-60"></div>
-    </div>
-    <div class="col-md-4 col-sm-6">
-      <div class="sp-blank-20"></div>
-      <div class="featured-person">
-        <a href="#">
-          <img src="files/pics/azahin.jpg" class="img-fluid">
-        </a>
-        <a href="https://zahinabrar.github.io">
-          <h3>Abrar Zahin</h3>
-        </a>
-        <p></p>
-      </div>
-      <div class="sp-blank-60"></div>
-    </div>
-    <div class="col-md-4 col-sm-6">
-      <div class="sp-blank-20"></div>
-      <div class="featured-person">
-        <a href="#">
-          <img src="files/pics/jcheng.jpg" class="img-fluid">
-        </a>
-        <a href="#">
-          <h3>Jiajun Cheng</h3>
         </a>
         <p></p>
       </div>
@@ -257,19 +340,144 @@ http://themeforest.net/user/owwwlab/
 
 <h2>Group Alumni</h2>
 
-<ul>
-  <li style="font-size: 120%;"><a href="https://rajanguluri.github.io" style="font-weight: bold;">Rajasekhar Anguluri</a> (co-advised with Oliver Kosut and Lalitha Sankar) | Postdoc 2024 | First Position: Assistant Professor ECE, University of Maryland, Baltimore County.</li>
-  <li style="font-size: 120%;"><a href="https://wayne0908.github.io" style="font-weight: bold;">Weizhi Li</a> (co-advised with Visar Berisha) | Postdoc 2024 | First Position: Postdoctoral Researcher LANL.</li>
-  <li style="font-size: 120%;"><a href="https://pouria-saidi.github.io" style="font-weight: bold;">Pouria Saidi</a> (co-advised with Visar Berisha) | Postdoc 2024 | First Position: Research Fellow, Mayo Clinic.</li>
-  <li style="font-size: 120%;"><a href="https://www.linkedin.com/in/vineetgattani/" style="font-weight: bold;">Vineet Gattani</a> | PhD 2024 | First Position: Data Modeling Engineer, Google (Extended Workforce).</li>
-  <li style="font-size: 120%;"><a href="https://parththaker.github.io" style="font-weight: bold;">Parth Thaker</a> | PhD 2023 | First Position: Intuitive Surgical.</li>
-  <li style="font-size: 120%;"><a href="#" style="font-weight: bold;">Robert Lattus</a> | UG 2022 | First Position: Grad Student at U Florida.</li>
-  <li style="font-size: 120%;"><a href="#" style="font-weight: bold;">Paroma Chatterjee</a> | MS 2020 | First Position: Transmission Analytics Consulting.</li>
-  <li style="font-size: 120%;"><a href="#" style="font-weight: bold;">Akarshan Sajja</a> | MS 2020 | First Position: Amazon.</li>
-  <li style="font-size: 120%;"><a href="#" style="font-weight: bold;">Shivakshit Patri</a> | MS 2020 | First Position: Amazon Web Sevices.</li>
-  <li style="font-size: 120%;"><a href="https://www.linkedin.com/in/sambarta-ray/" style="font-weight: bold;">Sambarta Ray</a> (co-advised with Claire Honeycutt) | MS 2020 | First Position: Manus Robotics.</li>
-  <li style="font-size: 120%;"><a href="https://artsmediaengineering.asu.edu/profile/john-janiczek" style="font-weight: bold;">John Janiczek</a> (co-advised with Suren Jayasuriya) | MS 2020 | First Position: SoundHound.</li>
-</ul>
+<div class="alumni-controls">
+  <div class="alumni-filter" aria-label="Filter alumni by role">
+    <button type="button" data-role-filter="all" aria-pressed="true">All</button>
+    <button type="button" data-role-filter="PhD" aria-pressed="false">PhD</button>
+    <button type="button" data-role-filter="Postdoc" aria-pressed="false">Postdoc</button>
+    <button type="button" data-role-filter="MS" aria-pressed="false">MS</button>
+    <button type="button" data-role-filter="UG" aria-pressed="false">UG</button>
+  </div>
+  <div class="alumni-sort">
+    <label for="alumniSort">Sort</label>
+    <select id="alumniSort">
+      <option value="year-desc">Year newest</option>
+      <option value="year-asc">Year oldest</option>
+      <option value="role">Role</option>
+      <option value="name">Name</option>
+    </select>
+  </div>
+  <span class="alumni-count" id="alumniCount"></span>
+</div>
+
+<table class="alumni-table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Role</th>
+      <th>Year</th>
+      <th>Co-advisor(s)</th>
+      <th>First position</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="Name"><a href="https://sensip.engineering.asu.edu/mohit-malu-phd/">Mohit Malu</a></td>
+      <td data-label="Role" class="degree">PhD</td>
+      <td data-label="Year" class="year">2026</td>
+      <td data-label="Co-advisor(s)"><a href="https://search.asu.edu/profile/93829">Andreas Spanias</a></td>
+      <td data-label="First position"></td>
+    </tr>
+    <tr>
+      <td data-label="Name"><a href="https://anirudhrayas.github.io">Anirudh Rayas</a></td>
+      <td data-label="Role" class="degree">PhD</td>
+      <td data-label="Year" class="year">2025</td>
+      <td data-label="Co-advisor(s)"></td>
+      <td data-label="First position">Postdoc at <a href="https://www.asu.edu/">ASU</a></td>
+    </tr>
+    <tr>
+      <td data-label="Name"><a href="https://zahinabrar.github.io">Abrar Zahin</a></td>
+      <td data-label="Role" class="degree">PhD</td>
+      <td data-label="Year" class="year">2025</td>
+      <td data-label="Co-advisor(s)"></td>
+      <td data-label="First position"><a href="https://www.mayoclinic.org/">Mayo Clinic</a></td>
+    </tr>
+    <tr>
+      <td data-label="Name"><a href="https://rajanguluri.github.io">Rajasekhar Anguluri</a></td>
+      <td data-label="Role" class="degree">Postdoc</td>
+      <td data-label="Year" class="year">2024</td>
+      <td data-label="Co-advisor(s)"><a href="https://search.asu.edu/profile/1981721">Oliver Kosut</a> and <a href="https://search.asu.edu/profile/1981673">Lalitha Sankar</a></td>
+      <td data-label="First position">Assistant Professor, <a href="https://www.csee.umbc.edu/">CSEE, University of Maryland, Baltimore County</a></td>
+    </tr>
+    <tr>
+      <td data-label="Name"><a href="https://wayne0908.github.io">Weizhi Li</a></td>
+      <td data-label="Role" class="degree">Postdoc</td>
+      <td data-label="Year" class="year">2024</td>
+      <td data-label="Co-advisor(s)"><a href="https://search.asu.edu/profile/226165">Visar Berisha</a></td>
+      <td data-label="First position">Postdoctoral Researcher, <a href="https://www.lanl.gov/">LANL</a></td>
+    </tr>
+    <tr>
+      <td data-label="Name"><a href="https://wayne0908.github.io">Weizhi Li</a></td>
+      <td data-label="Role" class="degree">PhD</td>
+      <td data-label="Year" class="year">2022</td>
+      <td data-label="Co-advisor(s)"><a href="https://search.asu.edu/profile/226165">Visar Berisha</a></td>
+      <td data-label="First position"><a href="https://about.meta.com/">Meta Inc.</a></td>
+    </tr>
+    <tr>
+      <td data-label="Name"><a href="https://pouria-saidi.github.io">Pouria Saidi</a></td>
+      <td data-label="Role" class="degree">Postdoc</td>
+      <td data-label="Year" class="year">2024</td>
+      <td data-label="Co-advisor(s)"><a href="https://search.asu.edu/profile/226165">Visar Berisha</a></td>
+      <td data-label="First position">Research Fellow, <a href="https://www.mayoclinic.org/">Mayo Clinic</a></td>
+    </tr>
+    <tr>
+      <td data-label="Name"><a href="https://www.linkedin.com/in/vineetgattani/">Vineet Gattani</a></td>
+      <td data-label="Role" class="degree">PhD</td>
+      <td data-label="Year" class="year">2024</td>
+      <td data-label="Co-advisor(s)"></td>
+      <td data-label="First position">Data Modeling Engineer, <a href="https://about.google/intl/all_us/extended-workforce">Google (Extended Workforce)</a></td>
+    </tr>
+    <tr>
+      <td data-label="Name"><a href="https://parththaker.github.io">Parth Thaker</a></td>
+      <td data-label="Role" class="degree">PhD</td>
+      <td data-label="Year" class="year">2023</td>
+      <td data-label="Co-advisor(s)"></td>
+      <td data-label="First position"><a href="https://www.intuitive.com/">Intuitive Surgical</a></td>
+    </tr>
+    <tr>
+      <td data-label="Name"><a href="#">Robert Lattus</a></td>
+      <td data-label="Role" class="degree">UG</td>
+      <td data-label="Year" class="year">2022</td>
+      <td data-label="Co-advisor(s)"></td>
+      <td data-label="First position">Grad Student at <a href="https://www.ufl.edu/">U Florida</a></td>
+    </tr>
+    <tr>
+      <td data-label="Name"><a href="#">Paroma Chatterjee</a></td>
+      <td data-label="Role" class="degree">MS</td>
+      <td data-label="Year" class="year">2020</td>
+      <td data-label="Co-advisor(s)"></td>
+      <td data-label="First position"><a href="https://transmissionanalytics.net/">Transmission Analytics Consulting</a></td>
+    </tr>
+    <tr>
+      <td data-label="Name"><a href="#">Akarshan Sajja</a></td>
+      <td data-label="Role" class="degree">MS</td>
+      <td data-label="Year" class="year">2020</td>
+      <td data-label="Co-advisor(s)"></td>
+      <td data-label="First position"><a href="https://www.aboutamazon.com/">Amazon</a></td>
+    </tr>
+    <tr>
+      <td data-label="Name"><a href="#">Shivakshit Patri</a></td>
+      <td data-label="Role" class="degree">MS</td>
+      <td data-label="Year" class="year">2020</td>
+      <td data-label="Co-advisor(s)"></td>
+      <td data-label="First position"><a href="https://aws.amazon.com/">Amazon Web Services</a></td>
+    </tr>
+    <tr>
+      <td data-label="Name"><a href="https://www.linkedin.com/in/sambarta-ray/">Sambarta Ray</a></td>
+      <td data-label="Role" class="degree">MS</td>
+      <td data-label="Year" class="year">2020</td>
+      <td data-label="Co-advisor(s)"><a href="https://search.asu.edu/profile/2410023">Claire Honeycutt</a></td>
+      <td data-label="First position"><a href="https://www.manus-robotics.com/">Manus Robotics</a></td>
+    </tr>
+    <tr>
+      <td data-label="Name"><a href="https://artsmediaengineering.asu.edu/profile/john-janiczek">John Janiczek</a></td>
+      <td data-label="Role" class="degree">MS</td>
+      <td data-label="Year" class="year">2020</td>
+      <td data-label="Co-advisor(s)"><a href="https://search.asu.edu/profile/3183646">Suren Jayasuriya</a></td>
+      <td data-label="First position"><a href="https://www.soundhound.com/">SoundHound</a></td>
+    </tr>
+  </tbody>
+</table>
 
 
 
@@ -298,7 +506,7 @@ http://themeforest.net/user/owwwlab/
       </div>
         <footer id="footer" class="dark-wrapper">
         <div id="footer-bar" class="text-center">
-        Last updated: March 2023 | &copy Gautam Dasarathy 2023
+        Last updated: June 2026 | &copy Gautam Dasarathy 2026
         </div>
 
       </footer>
@@ -316,6 +524,77 @@ http://themeforest.net/user/owwwlab/
     <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="http://localhost:35729/livereload.js"></script>
+    <script>
+      (function () {
+        const tableBody = document.querySelector('.alumni-table tbody');
+        const filterButtons = Array.from(document.querySelectorAll('[data-role-filter]'));
+        const sortSelect = document.getElementById('alumniSort');
+        const countLabel = document.getElementById('alumniCount');
+
+        if (!tableBody || !filterButtons.length || !sortSelect || !countLabel) {
+          return;
+        }
+
+        const roleOrder = ['PhD', 'Postdoc', 'MS', 'UG'];
+        const rows = Array.from(tableBody.querySelectorAll('tr')).map((row, index) => {
+          const cells = row.querySelectorAll('td');
+          return {
+            row,
+            index,
+            name: cells[0].textContent.trim(),
+            role: cells[1].textContent.trim(),
+            year: parseInt(cells[2].textContent.trim(), 10) || 0
+          };
+        });
+
+        let activeRole = 'all';
+
+        function compareRows(a, b) {
+          switch (sortSelect.value) {
+            case 'year-asc':
+              return a.year - b.year || a.name.localeCompare(b.name);
+            case 'role':
+              return roleOrder.indexOf(a.role) - roleOrder.indexOf(b.role) ||
+                b.year - a.year ||
+                a.name.localeCompare(b.name);
+            case 'name':
+              return a.name.localeCompare(b.name);
+            case 'year-desc':
+            default:
+              return b.year - a.year || a.name.localeCompare(b.name);
+          }
+        }
+
+        function renderAlumniTable() {
+          const sortedRows = rows.slice().sort(compareRows);
+          let visibleCount = 0;
+
+          sortedRows.forEach((entry) => {
+            const isVisible = activeRole === 'all' || entry.role === activeRole;
+            entry.row.hidden = !isVisible;
+            if (isVisible) {
+              visibleCount += 1;
+            }
+            tableBody.appendChild(entry.row);
+          });
+
+          countLabel.textContent = `${visibleCount} shown`;
+        }
+
+        filterButtons.forEach((button) => {
+          button.addEventListener('click', () => {
+            activeRole = button.dataset.roleFilter;
+            filterButtons.forEach((item) => {
+              item.setAttribute('aria-pressed', String(item === button));
+            });
+            renderAlumniTable();
+          });
+        });
+
+        sortSelect.addEventListener('change', renderAlumniTable);
+        renderAlumniTable();
+      }());
+    </script>
     <!-- #####End scripts-->
   </body>
 </html>

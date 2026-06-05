@@ -56,12 +56,70 @@
     },
     {
         "url_arxiv": "https://arxiv.org/abs/2405.14422",
-        "year": "2024",
-        "journal": "ArXiv Preprint",
+        "publisher": "Elsevier",
+        "year": "2025",
+        "volume": "6",
+        "number": "4",
+        "journal": "Patterns",
         "author": "Saidi, Pouria and Dasarathy, Gautam and Berisha, Visar",
         "title": "Unraveling overoptimism and publication bias in ML-driven science",
-        "ENTRYTYPE": "preprint",
-        "ID": "saidi2024unraveling"
+        "ENTRYTYPE": "article",
+        "ID": "saidi2025unraveling"
+    },
+    {
+        "url_arxiv": "https://arxiv.org/abs/2509.10742",
+        "year": "2026",
+        "booktitle": "Conference on Uncertainty in Artificial Intelligence (UAI)",
+        "author": "Li, Weizhi and Dasarathy, Gautam and Berisha, Visar",
+        "title": "Matched-Pair Experimental Design with Active Learning",
+        "ENTRYTYPE": "inproceedings",
+        "ID": "li2026matched"
+    },
+    {
+        "year": "2025",
+        "journal": "Advances in Neural Information Processing Systems (NeurIPS)",
+        "volume": "38",
+        "author": "Dolin, Pavel and Li, Weizhi and Dasarathy, Gautam and Berisha, Visar",
+        "title": "Statistically valid post-deployment monitoring should be standard for AI-based digital health",
+        "ENTRYTYPE": "csconf",
+        "ID": "dolin2025statistically"
+    },
+    {
+        "year": "2025",
+        "journal": "Transactions on Machine Learning Research (TMLR)",
+        "number": "2835-8856",
+        "author": "Zahin, Abrar and Anguluri, Rajasekhar and Sankar, Lalitha and Kosut, Oliver and Dasarathy, Gautam",
+        "title": "Robust Model Selection of Gaussian Graphical Models",
+        "ENTRYTYPE": "article",
+        "ID": "zahin2025robust"
+    },
+    {
+        "publisher": "SAGE Publications Sage UK: London, England",
+        "year": "2025",
+        "pages": "1271--1282",
+        "volume": "19",
+        "number": "3",
+        "journal": "Intelligent Decision Technologies",
+        "author": "Malu, Mohit and Dow, Diann and Sharma, Prateek and Cottam, Alexis and Binggeli, Mat and Dasarathy, Gautam and Pedrielli, Giulia and Spanias, Andreas",
+        "title": "High dimensional Bayesian optimization for circuit design",
+        "ENTRYTYPE": "article",
+        "ID": "malu2025high"
+    },
+    {
+        "year": "2025",
+        "journal": "US Patent 12,393,191",
+        "author": "Vinod, Abraham and Di Cairano, Stefano and Thaker, Parth and Dasarathy, Gautam",
+        "title": "Controlling search agents to perform search with noisy observations and probabilistic guarantees",
+        "ENTRYTYPE": "amisc",
+        "ID": "vinod2025controlling"
+    },
+    {
+        "year": "2025",
+        "journal": "US Patent App. 18/890,651",
+        "author": "Malu, Mohit and Pedrielli, Giulia and Dasarathy, Gautam and Spanias, Andreas",
+        "title": "Systems and methods for Gaussian process modeling for heterogeneous functions",
+        "ENTRYTYPE": "amisc",
+        "ID": "malu2025systems"
     },
 
     {
@@ -119,7 +177,7 @@
         "author": "Dasarathy, Gautam and Draper, Stark",
         "title": "Reliability in Noisy Search",
         "ENTRYTYPE": "inproceedings",
-        "ID": "dasarathy2011reliability"
+        "ID": "dasarathy2011noisysearch"
     },
     {
         "url_link": "https://doi.org/10.1109/INFCOM.2010.5461970",
@@ -169,7 +227,7 @@
         "author": "Dasarathy, Gautam and Draper, Stark",
         "title": "On Reliability Of Content Identification From Databases Based On Noisy Queries",
         "ENTRYTYPE": "inproceedings",
-        "ID": "dasarathy2011reliability"
+        "ID": "dasarathy2011contentidentification"
     },
     {
         "url_arxiv": "http://arxiv.org/abs/1404.7055",
@@ -609,23 +667,29 @@
         "journal": "arXiv preprint arXiv:2410.23424",
         "year": "2024",
         "ENTRYTYPE": "preprint",
-        "url_arxiv": "https://arxiv.org/abs/2410.23424"
+        "url_arxiv": "https://arxiv.org/abs/2410.23424",
+        "ID": "gattani2024communication"
     },
     {
-        "title": "Learning Networks from Wide-Sense Stationary Stochastic Processes",
+        "title": "Learning Networks From Wide-Sense Stationary Stochastic Processes",
         "author": "Rayas, Anirudh and Cheng, Jiajun and Anguluri, Rajasekhar and Deka, Deepjyoti and Dasarathy, Gautam",
-        "journal": "arXiv preprint arXiv:2412.03768",
-        "year": "2024",
-        "ENTRYTYPE": "preprint",
-        "url_arxiv": "https://arxiv.org/abs/2412.03768"
+        "journal": "IEEE Transactions on Signal and Information Processing over Networks",
+        "year": "2025",
+        "publisher": "IEEE",
+        "ENTRYTYPE": "article",
+        "url_arxiv": "https://arxiv.org/abs/2412.03768",
+        "ID": "rayas2025learning"
     },
     {
-        "title": "Structure Learning in Gaussian Graphical Models from Glauber Dynamics",
+        "title": "Structure learning in Gaussian graphical models from Glauber dynamics",
         "author": "Tirukkonda, Vignesh and Rayas, Anirudh and Dasarathy, Gautam",
-        "journal": "arXiv preprint arXiv:2412.18594",
-        "year": "2024",
-        "ENTRYTYPE": "preprint",
-        "url_arxiv": "https://arxiv.org/abs/2412.18594"
+        "booktitle": "2025 IEEE International Symposium on Information Theory (ISIT)",
+        "pages": "1--6",
+        "year": "2025",
+        "organization": "IEEE",
+        "ENTRYTYPE": "inproceedings",
+        "url_arxiv": "https://arxiv.org/abs/2412.18594",
+        "ID": "tirukkonda2025structure"
     },
     {
         "title": "ClassBO: Bayesian Optimization for Heterogeneous Functions",
@@ -634,7 +698,8 @@
         "pages": "249--253",
         "year": "2024",
         "ENTRYTYPE": "inproceedings",
-        "organization": "Springer Nature Switzerland Cham"
+        "organization": "Springer Nature Switzerland Cham",
+        "ID": "malu2024classbo"
     },
     {
         "title": "Advanced Tutorial: Label-Efficient Two-Sample Tests",
@@ -643,7 +708,8 @@
         "pages": "131--145",
         "year": "2024",
         "ENTRYTYPE": "inproceedings",
-        "organization": "IEEE"
+        "organization": "IEEE",
+        "ID": "li2024advanced"
     },
     {
         "title": "Understanding the spatial patchwork of predictive modeling of first wave pandemic decisions by US governors",
