@@ -104,7 +104,7 @@ http://themeforest.net/user/owwwlab/
               </li>
               <div class="sp-blank-40"></div>
               <li></li>
-              <li><a href="#" data-toggle="modal" data-target="#myModal" data-backdrop="false">Open Positions </a>
+              <li class="hidden"><a href="#" data-toggle="modal" data-target="#myModal" data-backdrop="false">Open Positions </a>
               </li>
             </ul>
             <div class="header-icons">
@@ -190,7 +190,7 @@ http://themeforest.net/user/owwwlab/
         </div>
       </section>
 
-      <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+      <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade hidden">
         <div role="document" class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -393,7 +393,7 @@ function renderPublications(publications, groupKey) {
   const sectionTitles = {
     'inproceedings': 'Conference and Workshop Papers',
     'journal_csconf': 'Journal and Journal-length CS Conference Papers',
-    'amisc': 'Miscellaneous',
+    'amisc': 'Intellectual Property',
     'preprint': 'Preprints',
     'incollection': 'Book Chapters',
     'phdthesis': 'Theses'

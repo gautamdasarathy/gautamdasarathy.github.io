@@ -56,6 +56,7 @@
     },
     {
         "url_arxiv": "https://arxiv.org/abs/2405.14422",
+        "url_link": "https://www.sciencedirect.com/science/article/pii/S2666389925000339",
         "publisher": "Elsevier",
         "year": "2025",
         "volume": "6",
@@ -77,6 +78,7 @@
     },
     {
         "url_link": "https://papers.nips.cc/paper_files/paper/2025/hash/a540928a972fea5b501b64c51f7829ef-Abstract-Position_Paper_Track.html",
+        "url_arxiv": "https://arxiv.org/abs/2506.05701",
         "year": "2025",
         "journal": "Advances in Neural Information Processing Systems (NeurIPS)",
         "volume": "38",
